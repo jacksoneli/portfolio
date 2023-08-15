@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<meta name="format-detection" content="telephone=no" />
+	<title></title>
+	<meta name="keywords" content="스토리잼" />
+	<meta name="description" content="스토리잼입니다." />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image" content="../../../images/meta_image.png">
+    <link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/viewer.css" />
+</head>
+<body ontouchstart="" class="tb_gray">
+	<div id="wrap">
+		<section class="body-section">
+			<div id="container">
+				<div class="contents pd0">
+					<div class="recommend hori_type">
+					    <h3 class="tit19">이어서 볼만한 스토리</h3>
+					    <section class="clearfix js_height">
+					        <article>
+					            <a href="#null">
+                                    <span class="tit_img adult_blur">
+                                        <img width="100%" src="https://dummyimage.com/325x224/000/fff&text=test" alt="">
+                                    </span>
+					                <span class="lower">
+                                        <span class="tit dotdotdot">엘리와 함께하는 색연필 드로잉 색연필 드로잉 수업 엘리와 함께하는 색연필 엘리와 함께하는 색연필 드로잉 수업</span>
+                                        <span class="name ellipsis">아이리스 - 스마트폰을 아이리스 스마트폰을 아이리스 - 스마트폰을 아이리스 스마트폰을</span>
+					                </span>
+					            </a>
+					        </article>
+					        <article>
+					            <a href="#null">
+                                    <span class="tit_img">
+                                        <img width="100%" src="https://dummyimage.com/325x224/e9e9e9/000&text=test" alt="">
+                                    </span>
+					                <span class="lower">
+                                        <span class="tit">두 가지의 소프트한 BL</span>
+                                        <span class="name ellipsis"><img width="16" src="../../../images/icons/12age@2x.png" alt="">버즈</span>
+					                </span>
+					            </a>
+					        </article>
+					        <article>
+					            <a href="#null">
+                                    <span class="tit_img">
+                                        <img width="100%" src="https://dummyimage.com/325x224/e9e9e9/000&text=test" alt="">
+                                    </span>
+					                <span class="lower">
+                                        <span class="tit dotdotdot">엘리와 함께하는 색연필 드로잉 색연필 드로잉 수업 엘리와 함께하는 색연필</span>
+                                        <span class="name ellipsis"><img width="16" src="../../../images/icons/15age@2x.png" alt="">버즈</span>
+					                </span>
+					            </a>
+					        </article>
+					        <article>
+					            <a href="#null">
+                                    <span class="tit_img">
+                                        <img width="100%" src="https://dummyimage.com/325x224/e9e9e9/000&text=test" alt="">
+                                    </span>
+					                <span class="lower">
+                                        <span class="tit">두 가지의 소프트한 BL</span>
+                                        <span class="name ellipsis"><img width="16" src="../../../images/icons/age@2x.png" alt="">버즈</span>
+					                </span>
+					            </a>
+					        </article>
+					    </section>
+					    <div class="more_wrap type2 mt24 pb26">
+					        <a href="#null" class="bttn btn56 btn_white"><span>다른 스토리 더보기&nbsp;<b class="helvetica_l">1/5</b></span></a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="../../js/jquery.dotdotdot.min.js"></script>
+	<script>
+		$(document).ready(function(){
+            //2줄 이상의 말줄임표
+            $(".dotdotdot").dotdotdot();
+            
+            //제목이 한줄인 경우 간격
+            $('.js_height .tit').each(function(i, e){
+                var h = $(this).height();
+                if(h < 20){
+                    $(this).siblings('.name').css({marginTop : '5px'});
+                };
+            });         
+        });
+    </script>
+</body>
+</html>

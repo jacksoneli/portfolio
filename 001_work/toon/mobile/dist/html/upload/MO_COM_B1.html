@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<meta name="format-detection" content="telephone=no" />
+	<title></title>
+	<meta name="keywords" content="스토리잼" />
+	<meta name="description" content="스토리잼입니다." />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image" content="../../../images/meta_image.png">
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/upload.css" />
+</head>
+<body ontouchstart="">
+	<div id="wrap">
+        <div class="gray_bg">
+            <header id="header">
+                <div class="offset">
+                    <h1><span class="w_beta">스토리 올리기<img class="beta" width="20.5" src="../../../images/beta@2x.png" alt="beta" /></span></h1>
+                    <a class="btn_cancle" href="#"><span class="blind">닫기</span></a>
+                </div>
+            </header>
+            <section class="body-section">
+                <div id="container">
+                    <div class="contents pd0 story_up">
+                        <div class="title">
+                            <div class="line"><span class="blind">밑줄</span></div>
+                            <div class="txt">스토리를 올리고<br />크리에이터가<br />되어보세요</div>
+                        </div>
+                        <div class="up_step">
+                            <article>
+                                <p>웹툰과 만화, 소설을 업로드하고<br />독자들에게 보여주세요</p>
+                            </article>
+                            <article class="a2">
+                                <p>한 컷의 이미지, 한 줄의 문장도<br />스토리가 됩니다</p>
+                            </article>
+                            <article class="a3">
+                                <p>업로드한 스토리로<br />다양한 수익을 창출해 보세요</p>
+                            </article>
+                        </div>
+                        <div class="btns_wrap">
+                            <button class="bttn btn56 btn_mint fwn w100 js_open_pop">지금 시작하기</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!--dim-->
+        <div class="modal-backdrop"></div>
+        <!--//dim-->
+        
+        <!--스토리 올리기_안내 팝업-->
+        <div class="modal-popup pop_tit_cont js_pop">
+            <div class="modal-dialog" role="document">
+                <div class="modal__container">
+                    <div class="tit tit17">스토리잼 팩토리에서<br />크리에이터가 되어보실래요?</div>
+                    <div class="cont mt8 txt15">더 나은 서비스 환경을 위해<br />PC 에서 먼저 제공하고 있어요.</div>
+                </div>
+                <div class="lower_wrap mt32">
+                    <a href="#null" class="bttn btn48 btn_mint w100 fwn js_close_pop">팩토리 PC 버전으로 이동하기</a>
+                    <button class="bttn btn48 btn_gray fwn w100 mt8 js_close_pop" type="button">나가기</button>
+                </div>
+            </div>
+        </div>
+        <!--//스토리 올리기_안내 팝업-->
+	</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // 팝업열기
+        $(document).on("click",".js_open_pop",function(){
+            $('body').addClass('modal-open');
+            $('.modal-backdrop').css('display', 'block');
+            $('.js_pop').addClass('open');
+        });
+        // 팝업닫기
+        $(document).on("click",".js_close_pop",function(){
+            $(this).closest('.modal-popup').removeClass('open');
+            $('.modal-backdrop').css('display', 'none');
+            $('body').removeClass('modal-open');
+        });
+    </script>
+</body>
+</html>

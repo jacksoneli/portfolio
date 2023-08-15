@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>O1.1 회원가입_약관동의 팝업</title>
+	<meta name="keywords" content="스토리잼" />
+	<meta name="description" content="스토리잼입니다." />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image" content="../../../images/meta_image.png">
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/signup.css" />
+</head>
+<body ontouchstart="">
+	<!-- 2019.09.06 추가되었습니다. -->
+  <div id="wrap">
+    <header class="index" id="header">
+      <div class="offset">
+        <a class="btn_back" href="#"><span class="blind">뒤로가기</span></a>
+        <h1 class="blind">회원가입</h1>
+        <a class="btn_home" href="#"><span class="blind">메인으로 이동</span></a>
+      </div>
+    </header>
+    <section class="body-section index">
+      <div id="container">
+        <div class="contents signup__intro" role="main">
+          <div class="signup__intro--wrap">
+            <p class="signup__intro--msg"><span>스토리잼 카피문구<br />스토리잼 카피문구</span></p>
+            <div class="contents__footer--fixed">	
+            	<div class="signup__intro--btn">
+            		<a class="signup__btn facebook" href="#"><span>페이스북으로 회원가입</span></a>
+            		<a class="signup__btn naver" href="#"><span>네이버로 회원가입</span></a>
+            		<a class="signup__btn email" href="#"><span>이메일로 회원가입</span></a>
+            	</div>
+            	<p class="signup__intro--members">이미 스토리잼 회원이신가요? <a href="../login/MO_COM_P1.html">로그인</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- [s] dimmed 클래스변경 2019.08.15 -->
+    <div class="modal-backdrop" style="display:block;"></div>
+    <!-- [e] dimmed 클래스변경 -->
+    <div class="modal-popup alert-modal terms_agree open" tabindex="0" role="dialog" aria-labelledby="join-label">
+      <div class="modal-dialog" role="document">
+        <div class="modal__header">
+          <h1 id="join-label">약관동의</h1>
+          <a class="modal__header--close" href="#" role="button"><span class="blind">팝업닫기</span></a>
+        </div>
+        <div class="modal__container">
+          <form>
+            <ul class="modal__container--terms">
+              <li>
+                <input class="blind" class="blind" type="checkbox" id="chk_all" name="chk_all" />
+                <label class="chk-all" for="chk_all">전체 동의</label>
+                <a class="accordion-trigger" href="#"><span class="blind">전체약관 보기</span></a>
+                <p class="terms_msg">서비스 이용약관, 개인정보 수집 및 이용, 마케팅 정보 수신 (선택)</p>
+                <ul class="terms_box accordion-panel">
+                  <li class="">
+                    <input class="blind" type="checkbox" id="terms_service" name="terms" required />
+                    <label for="terms_service">[필수] 서비스 이용약관</label>
+                    <ul class="term_box">
+                      <li>
+                        <a href="#">
+                          <span>이용약관</span>
+                          <strong>보기</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>개인정보 처리방침</span>
+                          <strong>보기</strong>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input class="blind" type="checkbox" id="terms_privacy" name="terms" />
+                    <label for="terms_privacy">[선택] 마케팅 정보 수신</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="no-sub">
+                <input class="blind" type="checkbox" id="chk_adult" name="terms_adult" required />
+                <label for="chk_adult">[필수] 만 <span lang="en">14</span>세 이상입니다</label>
+              </li>
+            </ul>
+            <button class="btn submit" type="submit" disabled><span>확인</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('body').addClass('modal-open');
+
+      var $modal = $('.modal-popup');
+      /* 2019.08.25 margin 삭제 */
+
+      // 아코디언 
+      // 2019.08.26 수정
+      $('.accordion-trigger').on('click', function(e){
+        if (!$(this).closest('li').hasClass('is-current')) {
+          $(this).closest('li').addClass('is-current');
+        } else {
+          $(this).closest('li').removeClass('is-current');
+        }
+      });
+
+
+      // 전체동의 체크
+      var $chkAll = $('#chk_all');
+      var choose = $('.terms_box').find('input[type=checkbox]');
+      $chkAll.on('change', function(){
+
+        if ($chkAll.prop('checked') === true) {
+          choose.prop('checked', true);
+        } else {
+          choose.prop('checked', false);
+        }
+      });
+      $('.terms_box input[type=checkbox]').on('change', function(){
+        if (choose.length == choose.filter(':checked').length) {
+          $chkAll.prop('checked', true);
+        } else {
+          $chkAll.prop('checked', false);
+        }
+      });
+
+      // 확인버튼 활성화
+      $('.modal__container--terms input[type=checkbox]').on('change', function(){
+        if ($('.modal__container--terms > li > input[type=checkbox]:checked').length >= 1) {
+          $('.submit').removeAttr('disabled');
+        } else {
+          $('.submit').attr('disabled', true);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Analog Clock</title>
+<style>
+*{margin:0; padding:0;}
+
+#clock{width:500px; height:500px; background:url(images/clock_bg.png); position:relative;}
+#shortHand{width:30px; height:85px; background:url(images/hour_hand.png); position:absolute; left:235px; top:165px; transform-origin:center bottom;}
+#longHand{width:17px; height:120px; background:url(images/minute_hand.png); position:absolute; left:242px; top:120px; transform:rotate(90deg); transform-origin:center bottom;}
+#secondsHand{width:17px; height:130px; background:url(images/second_hand.png); position:absolute; left:242px; top:120px; transform:rotate(30deg); transform-origin:center bottom;}
+</style>
+<script>
+window.onload=function(){
+	
+	var shortHand=document.getElementById("shortHand");		//시침
+	var longHand=document.getElementById("longHand");		//분침
+	var secondsHand=document.getElementById("secondsHand");	//초침
+	
+	setInterval(function(){
+		var objDate=new Date();
+		
+		var hours=objDate.getHours();
+		var minutes=objDate.getMinutes();
+		var seconds=objDate.getSeconds();
+		
+		hours=(360/12)*Number(hours);
+		hours+=(30/60)*Number(minutes);
+		minutes=(360/60)*Number(minutes);
+		seconds=(360/60)*Number(seconds);
+		
+		shortHand.style.transform="rotate("+hours+"deg)";
+		longHand.style.transform="rotate("+minutes+"deg)";
+		secondsHand.style.transform="rotate("+seconds+"deg)";
+		
+	},1000);
+}
+
+</script>
+</head>
+
+<body>
+<div id="clock">	
+    <div id="shortHand"></div>
+    <div id="longHand"></div>
+    <div id="secondsHand"></div>
+</div>
+</body>
+</html>

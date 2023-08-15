@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+}
+html { -webkit-text-size-adjust: none; }
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #fff;
+    font-size: 12px;
+    -webkit-overflow-scrolling: touch;
+}
+
+body, button, input, textarea, code, pre { 
+    font-family: "애플 SD 산돌고딕 Neo", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif 
+}
+
+ul, ol, dl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li,dt,dd{
+    padding: 0;
+    margin: 0;
+}
+a {
+    color:#000;
+    text-decoration: none;
+}
+input{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    vertical-align: middle
+}
+input[type=text]{
+    border: 1px solid #696969;
+    border-radius: 4px;
+    padding: 0 8px 2px;
+    width: 100%;
+    height: 38px;
+    font-size: 12px;
+    color: #000;
+}
+a:active,a:visited,a:focus{
+    color:#2b2b2b
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+    font-weight: normal
+}
+button{
+    font-weight: normal;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: none
+}
+button:focus{
+    outline: none
+}
+img{
+    width: 100%
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+html[xmlns].clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.blind::before{
+    display: block;
+    width: 0;
+    height: 0;
+    content: '\00a0';
+    font-size: 0;
+}
+.modal{
+    display: none;
+}
+.bgDim{
+    position: fixed;
+    width:100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 100;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Margin, Padding */
+.mt0{margin-top: 0 !important;}
+.mt10{margin-top: 10px !important;}
+.mt20{margin-top: 20px !important;}
+.mb17{margin-bottom: 17px !important;}
+.mb10{margin-bottom: 10px !important;}
+.mb20{margin-bottom: 20px !important;}
+.mb30{margin-bottom: 30px !important;}
+.mb50{margin-bottom: 50px !important;}
+.mb60{margin-bottom: 60px !important;}
+
+.pb0{padding-bottom: 0px !important;}
+.pb100{padding-bottom: 100px !important;}
+
+/* Font Align */
+.align_left{
+    text-align: left
+}
+.align_right{
+    text-align: right
+}
+.align_center{
+    text-align: center
+}
+
+/* Float */
+.fll{
+    float: left;
+}
+.flr{
+    float: right;
+}
+.flnone{
+    float: none;
+}
+
+/* Font Color */
+.yellow{color:#fcb828;}
+
+/* Font Style */
+.bold{font-weight: bold}
+
+/* Check Box */
+.checks {
+    position: relative;
+    line-height: 20px;
+}
+.checks input[type="checkbox"] {
+	/* 실제 체크박스는 화면에서 숨김 */ 
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0 
+}
+.checks input[type="checkbox"] + label {
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
+	/* 글자와 체크박스 사이의 간격을 변경 */ cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.checks input[type="checkbox"] + label:before {
+	/* 가짜 체크박스 */
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	/* 이 값을 변경해서 글자와의 정렬 */ width: 14px;
+	/* 체크박스의 너비를 지정 */ height: 14px;
+	/* 체크박스의 높이를 지정 */ line-height: 14px;
+	/* 세로정렬을 위해 높이값과 일치 */ text-align: center;
+	background: #fafafa;
+	border: 1px solid #cacece;
+	border-radius : 3px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.checks input[type="checkbox"] + label:active:before,
+.checks input[type="checkbox"]:checked + label:active:before {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.checks input[type="checkbox"]:checked + label:before {
+	/* 체크박스를 체크했을때 */
+	content: '\2714';
+	/* 체크표시 유니코드 사용 */ color: #99a1a7;
+	text-shadow: 1px 1px #fff;
+	background: #e9ecee;
+	border-color: #adb8c0;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+/* Radio Box */
+.checks input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+.checks input[type="radio"] + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.checks input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #cacece;
+    border-radius: 100%;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.checks input[type="radio"] + label:active:before,
+.checks input[type="radio"]:checked + label:active:before {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.checks input[type="radio"]:checked + label:before {
+    background: #E9ECEE;
+    border-color: #adb8c0;
+}
+.checks input[type="radio"]:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background: #99a1a7; border-radius: 100%; box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+/* Icon Sprite map */
+.icon-common {
+	background: url('./imgs/icon-common.png') no-repeat 0 0;
+    background-size: 400px 400px;
+    vertical-align: middle;
+	width: 0;
+    height: 0;
+    display: inline-block;
+}
+.icon-search{
+    width: 16px;
+    height: 16px;
+    background-position: -9px -8px
+}
+.icon-bookmark{
+    width: 17px;
+	height: 17px;
+    background-position: -31px -7px;
+}
+.icon-hambug{
+    width: 17px;
+	height: 11px;
+    background-position: -54px -11px;
+}
+.icon-curren_user{
+    width: 12px;
+	height: 12px;
+    background-position: -11px -29px;
+}
+.icon-like{
+    width: 12px;
+	height: 12px;
+    background-position: -31px -29px;
+}
+.icon-option{
+    width: 5px;
+	height: 19px;
+    background-position: -15px -46px;
+}
+.icon-coin{
+    width: 15px;
+	height: 15px;
+    background-position: -77px -9px;
+}
+.icon-camera{
+    width: 13px;
+	height: 11px;
+    background: url(../imgs/camera.png) no-repeat 50% 50%;
+    background-size: 13px auto;
+}
+.icon-mic{
+    width: 16px;
+	height: 19px;
+    background-position: -28px -46px;
+}
+.icon-searchOn{
+    width: 16px;
+    height: 16px;
+    background-position: -97px -8px
+}
+.icon-searchClose{
+    width: 10px;
+    height: 11px;
+    background-position: -65px -29px;
+}
+.icon-heart{
+    width: 10px;
+    height: 11px;
+    background-position: -112px -29px;
+}
+.icon-checkYellow{
+    width: 10px;
+    height: 11px;
+    background-position: -80px -29px;
+}
+.icon-circleStar{
+    width: 11px;
+    height: 11px;
+    background-position: -97px -29px;
+}
+.icon-mic1st{
+    width: 16px;
+    height: 23px;
+    background-position: -9px -71px;    
+}
+.icon-mic2nd{
+    width: 13px;
+    height: 18px;
+    background-position: -29px -76px;
+}
+.icon-mic3rd{
+    width: 11px;
+    height: 15px;
+    background-position: -45px -79px;
+}
+.icon-bookmark-big{
+    width: 28px;
+    height: 28px;
+    background-position: -37px -104px;
+}
+.icon-bookmark-big-on{
+    width: 28px;
+    height: 28px;
+    background-position: -3px -104px;
+}
+
+/* Btn Sprite */
+.btn-sprite {
+	background: url('./imgs/btn-sprite.png') no-repeat 0 0;
+	background-size: 400px 400px;
+    display: inline-block;
+}
+
+
+/*폰트*/
+@font-face {
+  font-family: 'Impact_font';
+  font-style: normal;
+  src: url('../imgs/font/impact.ttf') format('truetype');
+}
+.impact_font{font-family: Impact_font, Impact}
+
+@font-face {
+  font-family: 'agency_font';
+  font-style: normal;
+  src: url('../imgs/font/AGENCYR.ttf') format('truetype');
+}
+.agency_font{font-family: agency_font; letter-spacing: 2px;}
+
+.sandoll4B_font{font-family: 'Sandoll 4BYeonpil'; letter-spacing: 1px;}
+
+/*hide*/
+.hide{display: none !important;}
+
+/*table*/
+table{border-collapse:collapse;border-spacing:0; width: 100%; table-layout: fixed;}
+
+/*10도만 기울인 italic*/
+.italic{font-style: normal; transform: skewX(-10deg); display: inline-block;}
+
+/*말줄임표 처리*/
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+
+/*placeholder*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a6a6a6;
+    opacity: 1; /* Firefox */
+}
+
+/*select*/
+select{height: 38px; box-sizing: border-box; border: 1px solid #696969; width: 100%; border-radius: 4px; color: #505050; font-size: 11px; color: #444;}
+
+/*layout*/
+.w16_wrap{padding: 0 16px;}
+.back_gray{background: #ebebe9;}
+.back_gray_light{background: #e7e7e7;}
+.back_dark_gray{background: #292929;}
+.center{text-align: center !important;}
+
+
+
+
+
+
+
+
+
+

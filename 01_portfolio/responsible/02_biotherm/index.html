@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BIOTHERM HOMME MAIN</title>
+<link rel="shortcut icon" href="images/shortcut_icon.png" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="CSS/reset.css" />
+<link rel="stylesheet" href="CSS/main_p_master.css" media="screen and (min-width:980px)" />
+<link rel="stylesheet" href="CSS/main_t_master.css" media="screen and (min-width:760px) and (max-width:979px)" />
+<link rel="stylesheet" href="CSS/main_m_master.css" media="screen and (max-width:759px)" />
+<script src="libs/jquery-1.7.1.min.js"></script>
+<script src="libs/jquery.easing.1.3.js"></script>
+<script src="Scripts/banner_slider.js"></script>
+</head>
+
+<body>
+<input type="checkbox" id="toggle" />
+<div id="wrap">
+    <div class="skip">
+        <a href="#wrap">콘텐츠바로가기</a>
+        <a href="#gnb">메인메뉴바로가기</a>
+        <a href="#main_footer">푸터바로가기</a>
+    </div>
+    <header id="main_header">
+    	<nav id="login_menu">
+        	<ul>
+                <li><a href="sub.html">로그인</a></li>
+                <li>|</li>
+                <li><a href="sub.html">회원가입</a></li>
+                <li>|</li>
+                <li><a href="sub.html">매장찾기</a></li>
+                <li>|</li>
+                <li><a href="sub.html">사이트맵</a></li>
+                <li>|</li>
+                <li><a href="sub.html">고객센터</a></li>
+            </ul>
+        </nav>
+        <h1 id="logo"><a href="#"><img src="images/logo.png" alt="로고" /></a></h1>
+        <label for="toggle" id="toggle_label" onClick="">메뉴 펼치는 버튼</label>
+        <nav id="gnb">
+        	<ul>
+                <li><a href="sub.html">PRODUCTS +</a></li>
+                <li><a href="sub.html">WHAT'S NEW</a></li>    
+                <li><a href="sub.html">BIOTHERM STORY</a>
+                	<ul>
+                    	<li><a href="sub.html">비오템 소개</a></li>
+                    	<li><a href="sub.html">비오템 광고</a></li>
+                    </ul>
+                </li>    
+                <li><a href="sub.html">BIOTHERM LOUNGE</a></li>
+                <li><a href="sub.html">EVENT</a>
+                	<ul>
+                    	<li><a href="sub.html">진행중 이벤트</a></li>
+                    	<li><a href="sub.html">지난 이벤트</a></li>
+                    	<li><a href="sub.html">당첨자 발표</a></li>
+                    </ul>
+                </li>    
+                <li><a href="sub.html">POINT GIFT</a>
+                	<ul>
+                    	<li><a href="sub.html">Point Gift</a></li>
+                    	<li><a href="sub.html">Online문의</a></li>
+                    </ul>
+                </li>    
+            </ul>
+            <div id="btn_close">CLOSE</div>
+			<script>
+                window.onload=function(){
+                    $("#btn_close").click(
+                        function(){
+                            $("#toggle").removeAttr("checked");
+                        }
+                    );
+                }
+            </script>
+        </nav>
+        <div id="search">
+            <fieldset>
+                <label class="blind">통합검색 단어입력</label>
+                <input type="text" class="search" />
+                <input type="image" src="images/search_btn.png" alt="검색버튼" />
+            </fieldset>
+        </div>
+    </header>
+    <div id="banner">
+        <!--배너슬라이더 시작-->
+    	<div class="banner_slider">
+            <div class="banner_container">
+                <div id="banner_content">
+                    <img src="images/banner_1.png" alt="배너이미지1" />
+                    <img src="images/banner_2.png" alt="배너이미지2" />
+                    <img src="images/banner_3.png" alt="배너이미지3" />
+                </div>
+            </div>
+            <div class="banner_nav_container">
+                <ul id="banner_nav">
+                    <li><a href="sub.html">1</a></li>
+                    <li><a href="sub.html">2</a></li>
+                    <li><a href="sub.html">3</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--배너슬라이더 끝-->
+    </div>
+    <script>
+    var bannerSlider=null;
+    $(document).ready(function(){
+        bannerSlider = new BannerSlider();
+        bannerSlider.initMenu();
+        bannerSlider.initEventListener();
+        
+        bannerSlider.startAutoPlay();
+    });
+    </script>
+    <div id="content">
+    	<section id="product_section_1">
+        	<h1>AQUAPOWER <span>SERIES</span></h1>
+            <article id="articles_1">
+                <dl id="articles_1-1">
+                    <dt>
+                        <div>아쿠아파워 클렌저 사진</div>
+                        <p>아쿠아파워 <span>클렌저</span></p>
+                    </dt>
+                    <dd>
+                        <input type="image" src="images/btn_detail.png" alt="상세보기버튼" />
+                        <input type="image" src="images/btn_buy.png" alt="구매하기버튼" />
+                    </dd>
+                </dl>
+                <dl id="articles_1-2">
+                    <dt>
+                        <div>아쿠아파워 <span>토너 사진</span></div>
+                        <p>아쿠아파워 토너</p>
+                    </dt>
+                    <dd>
+                        <input type="image" src="images/btn_detail.png" alt="상세보기버튼" />
+                        <input type="image" src="images/btn_buy.png" alt="구매하기버튼" />
+                    </dd>
+                </dl>
+                <dl id="articles_1-3">
+                    <dt>
+                        <div>아쿠아파워 모이스춰라이저 사진</div>
+                        <p>아쿠아파워 <span>모이스춰라이저</span></p>
+                    </dt>
+                    <dd>
+                        <input type="image" src="images/btn_detail.png" alt="상세보기버튼" />
+                        <input type="image" src="images/btn_buy.png" alt="구매하기버튼" />
+                    </dd>
+                </dl>
+            </article>
+        </section>
+        <section id="product_section_2">
+            <h1>WHITE PEEL <span>SERIES</span></h1>
+            <article id="articles_2">
+                <dl id="articles_2-1">
+                    <dt>
+                        <div>화이트 필 클렌저 사진</div>
+                        <p>화이트 필 <span>클렌저</span></p>
+                    </dt>
+                    <dd>
+                        <input type="image" src="images/btn_detail.png" alt="상세보기버튼" />
+                        <input type="image" src="images/btn_buy.png" alt="구매하기버튼" />
+                    </dd>
+                </dl>
+                <dl id="articles_2-2">
+                    <dt>
+                        <div>화이트 필 스킨로션 사진</div>
+                        <p>화이트 필<span> 스킨로션</span></p>
+                    </dt>
+                    <dd>
+                        <input type="image" src="images/btn_detail.png" alt="상세보기버튼" />
+                        <input type="image" src="images/btn_buy.png" alt="구매하기버튼" />
+                    </dd>
+                </dl>
+                <dl id="articles_2-3">
+                    <dt>
+                        <div>화이트 필 에센스 사진</div>
+                        <p>화이트 필<span> 에센스</span></p>
+                    </dt>
+                    <dd>
+                        <input type="image" src="images/btn_detail.png" alt="상세보기버튼" />
+                        <input type="image" src="images/btn_buy.png" alt="구매하기버튼" />
+                    </dd>
+                </dl>
+            </article>
+        </section>
+    	<section id="product_section_3">
+        	<h1>FORCE SUPREME <span>SERIES</span></h1>
+            <article id="articles_3">
+            	<div class="txt moblie_blind">
+                	<h3>남자 피부의 힘을 입체적으로 완성하다</h3>
+                    <h3>비오템 옴므 포스 크림</h3>
+                </div>
+                <dl id="articles_3-1">
+                    <dt>
+                        <div>포스 수프림 젤 리엑티베이팅 사진</div>
+                        <p>포스 수프림 젤<span>&nbsp;리엑티베이팅</span></p>
+                    </dt>
+                    <dd>
+                        <input type="image" src="images/btn_detail.png" alt="상세보기버튼" />
+                        <input type="image" src="images/btn_buy.png" alt="구매하기버튼" />
+                    </dd>
+                </dl>
+                <dl id="articles_3-2">
+                    <dt>
+                        <div>포스 수프림 크림 사진</div>
+                        <p>포스 수프림&nbsp;<span>크림</span></p>
+                    </dt>
+                    <dd>
+                        <input type="image" src="images/btn_detail.png" alt="상세보기버튼" />
+                        <input type="image" src="images/btn_buy.png" alt="구매하기버튼" />
+                    </dd>
+                </dl>
+                <dl id="articles_3-3">
+                    <dt>
+                        <div>포스 수프림 유쓰 아키텍트 세럼 사진</div>
+                        <p>포스 수프림 유쓰<span>&nbsp;아키텍트 세럼</span></p>
+                    </dt>
+                    <dd>
+                        <input type="image" src="images/btn_detail.png" alt="상세보기버튼" />
+                        <input type="image" src="images/btn_buy.png" alt="구매하기버튼" />
+                    </dd>
+                </dl>
+            </article>
+        </section>
+    	<section id="movie_section">
+        	<h1>BIOTHERM <span>STORY</span></h1>
+            <div id="movie_articles">
+            	<article><a href="sub.html">movie1</a></article>
+            	<article><a href="sub.html">movie2</a></article>
+            	<article><a href="sub.html">movie3</a></article>
+            	<article><a href="sub.html">movie4</a></article>
+            </div>
+        </section>
+    </div>
+    <footer id="main_footer">
+    	<h1 id="f_logo_left" class="moblie_blind">f_logo_left</h1>
+        <div id="f_corp">
+			<span><a href="sub.html">개인정보 취급방침</a></span>
+			<span> | </span>
+			<span><a href="sub.html">이용약관</a></span>
+			<span> | </span>
+			<span><a href="sub.html">공지사항</a></span>
+            <address>엘오케이(유)&nbsp;&nbsp;&nbsp;사업자번호:220-81-73483&nbsp;&nbsp;&nbsp;<span>대표:얀브노와르부르동</span></address>
+            <address>COPYRIGHT &copy; 2014 BIOTHERM</address>
+        </div>
+    	<h1 id="f_logo_right" class="moblie_blind">f_logo_right</h1>
+    </footer>
+</div>
+</body>
+</html>
