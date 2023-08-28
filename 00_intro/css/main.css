@@ -102,7 +102,7 @@ section article dl:hover dd{top:85px; opacity: 1;}
 .section1 article dl{height: 75px; margin: 10px;}
 
 .section3{width: 400px;}
-.section3 article dl{width: 200px; height: 40px; margin: 5px;}
+.section3 article dl{width: 200px; height: 38px; margin: 5px;}
 .section3 article dl:hover dd{top:45px;}
 .section3 article dl dd{font-size: 12px;}
 
@@ -110,10 +110,8 @@ section article dl:hover dd{top:85px; opacity: 1;}
 .lr_wrap .left{width: 45%;}
 .lr_wrap .right{width: 55%;}
 
-
-
 .edu{margin-top: 40px;}
-.edu p{text-align: left; display: inline-block; line-height: 40px; border-right: 2px solid #333; padding: 0 150px 0 150px;}
+.edu p{text-align: left; display: inline-block; line-height: 40px; border-right: 2px solid #333; padding: 0 150px;}
 
 .skill{display: flex; justify-content: center; gap: 0 10px; margin-top: 20px;}
 .skill .box{position: relative; width: 60px; height: 60px; border: 1px solid #ccc; border-radius: 6px; display: flex; justify-content: center; align-items: center;}
@@ -121,10 +119,6 @@ section article dl:hover dd{top:85px; opacity: 1;}
 .skill.tool .box img{width: 45px;}
 .skill .box span{display: none; position: absolute; border: 1px solid #800; top: 65px; left: 50%; transform: translate(-50%); font-family:'Noto Sans', sans-serif; font-size: 16px; border-radius: 4px; color: #800; padding: 5px;}
 .skill .box:hover span{display: block;}
-
-
-
-
 
 .feedback{position: relative;}
 .slide{position: absolute; width: 720px; left: 50%; margin-left: -210px; height: 100%; top: 100px;}
