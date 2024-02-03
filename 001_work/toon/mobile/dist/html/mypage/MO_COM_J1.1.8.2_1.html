@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>J1.1.8.2 마이_내정보_회원탈퇴_유의사항 확인</title>
+	<meta name="keywords" content="스토리잼" />
+	<meta name="description" content="스토리잼입니다." />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image" content="../../../images/meta_image.png">
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/mypage.css" />
+</head>
+<body ontouchstart="">
+	<!-- 2019.09.06 추가되었습니다. -->
+	<div id="wrap">
+		<header id="header">
+			<div class="offset">
+				<a class="btn_back" href="#"><span class="blind">뒤로가기</span></a>
+				<h1>회원탈퇴</h1>
+                <div class="bar-progress">
+                    <span class="bar" style="width:66.66%;"></span>
+                </div>
+			</div>
+		</header>
+		<section class="body-section withdrawal">
+			<div id="container">
+				<div class="contents" role="main">
+					<div class="contents__header">
+            <h2 class="contents__title">탈퇴 전, 꼭 확인해 주세요!</h2>
+          </div>
+          <div class="withdrawal__notice">
+          	내용없음
+          </div>
+          <div class="withdrawal__notice--footer">
+          	<div class="wrapper">
+	          	<p>
+	          		<input class="blind" type="checkbox" id="noticeDesc" />
+	          		<label for="noticeDesc">안내 사항을 모두 확인했으며, 회원정보와 보유자산은 모두 삭제되며 복구가 불가함에 동의합니다.</label>
+	          	</p>
+	          	<div class="withdrawal__notice--func">
+	          		<a class="withdrawal__notice--btn cancel" id="withdrawalCancel" href="#"><span>탈퇴취소</span></a>
+								<button class="withdrawal__notice--btn active" id="withdrawalNext" disabled><span>탈퇴하기</span></button>
+	          	</div>
+          	</div>
+          </div>
+				</div>
+			</div>
+		</section>
+
+		<div class="modal-backdrop" style="display:block;"></div>
+		<!-- 2019.08.27 class변경 -->
+		<div class="modal-popup popup3 open" tabindex="0" role="dialog">
+		    <div class="modal-dialog" role="document">
+		        <div class="modal__header">
+		            <h1>탈퇴불가 안내</h1>
+		        </div>
+		        <div class="modal__container">
+		            <p>죄송합니다. <br />판매대기/ 판매중인 스토리가 있는 경우, <br />또는 수익금이 남아있는 경우 탈퇴가 불가능합니다.</p>
+		            <p>관련 문의는 [ 1:1문의하기 ] 또는 <br /><a href="mailto:help@storyjam.co.kr" target="_blank" rel="noopener">help@storyjam.co.kr</a>로 문의해 주시면 <br />최대한 빠르게 답변해 드리겠습니다.</p>
+		        </div>
+		        <div class="modal__footer">
+		            <button class="btn submit"><span>확인</span></button>
+		        </div>
+		    </div>
+		</div>    
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('body').addClass('modal-open');
+		});
+	</script>
+</body>
+</html>

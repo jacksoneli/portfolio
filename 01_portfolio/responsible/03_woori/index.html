@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>우리은행 메인페이지</title>
+<link rel="shortcut icon" href="images/shortcut_icon.png" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="CSS/reset.css" />
+<link rel="stylesheet" href="CSS/main_p_master.css" media="screen and (min-width:980px)" />
+<link rel="stylesheet" href="CSS/main_t_master.css" media="screen and (min-width:760px) and (max-width:979px)" />
+<link rel="stylesheet" href="CSS/main_m_master.css" media="screen and (max-width:759px)" />
+<script src="libs/jquery-1.7.1.min.js"></script>
+<script src="libs/jquery.easing.1.3.js"></script>
+</head>
+
+<body>
+	<header id="main_header">
+        <a id="main_logo" href="#"><img src="images/logo.png" alt="로고" /></a>
+        <label for="m_toggle" id="m_menu_btn" class="m_only" onClick="">모바일 메뉴버튼</label>
+        <input type="checkbox" id="m_toggle" class="m_only"/>
+        <nav id="upper_menu">
+        	<ul id="seq_menu">
+            	<li><a href="#">보안센터</a></li>
+            	<li><a href="#">고객센터</a></li>
+            	<li><a href="#">마이페이지</a></li>
+            	<li><a href="#">은행소개</a></li>
+            	<li><a href="#">영업점안내</a></li>
+            </ul>
+            <fieldset id="search">
+                <input id="search_box" type="text" placeholder=" 검색어 입력" />
+                <input id="search_btn" type="image" src="images/search_btn.png" />
+            </fieldset>
+        </nav>
+        <nav id="gnb">
+        	<ul>
+            	<li><a href="#">공인인증센터</a></li>
+            	<li><a href="#">개인</a></li>
+            	<li><a href="#">기업</a></li>
+            	<li><a href="#" class="no_border">금융상품</a></li>
+            	<li><a href="#">카드</a></li>
+            	<li><a href="#">웹진</a></li>
+            	<li><a href="#" class="no_border">우리사랑e나눔터</a></li>
+            </ul>
+            
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" id="toggle_label" class="p_only" onClick="">전체서비스</label>
+			<nav id="all_services">
+                <div id="btn_close">X 닫기</div>
+                <script>
+                    window.onload=function(){
+                        $("#btn_close").click(
+                            function(){
+                                $("#toggle").removeAttr("checked");
+                            }
+                        );
+                    }
+                </script>
+            	<ul>
+                	<li><a href="#">펀드센터 | 보험센터</a></li>
+                	<li><a href="#">론센터</a></li>
+                	<li><a href="#">외환센터</a></li>
+                	<li><a href="#">주택도시기금(주택청약)</a></li>
+                	<li><a href="#">퇴직연금</a></li>
+                	<li><a href="#">웰리치100머니플랜</a></li>
+                	<li><a href="#">기업지원서비스</a></li>
+                	<li><a href="#">우리에스크로</a></li>
+                	<li><a href="#">우리이야기</a></li>
+                </ul>
+            	<ul>
+                	<li><a href="#">스마트금융</a></li>
+                	<li><a href="#">아이마당</a></li>
+                	<li><a href="#">우리사랑e나눔터</a></li>
+                	<li><a href="#">투체어스PB</a></li>
+                	<li><a href="#">스무살우리스페이스</a></li>
+                	<li><a href="#">제휴우대클럽</a></li>
+                	<li><a href="#">머핀 | 이벤트</a></li>
+                	<li><a href="#">우리제휴광장</a></li>
+                	<li><a href="#">우리가족우대서비스</a></li>
+                </ul>
+            	<ul>
+                	<li><a href="#">고객광장</a></li>
+                	<li><a href="#">보안센터</a></li>
+                	<li><a href="#">은행소개/IR</a></li>
+                	<li><a href="#">영업점안내</a></li>
+                	<li><a href="#">웹진좋은예감</a></li>
+                	<li><input type="image" src="images/eng.png" /><input type="image" src="images/chn.png" /><input type="image" src="images/jpn.png" /></li>
+                	<li><input type="image" src="images/flp.png" /><input type="image" src="images/vtn.png" /><input type="image" src="images/mgl.png" /></li>
+                	<li><a href="#"><b>사이트맵</b></a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    
+    <div id="banner">
+    	<ul id="log_in">
+        	<li><a href="#">개인<br />로그인</a></li>
+        	<li><a href="#">기업<br />로그인</a></li>
+        </ul>
+    	<div id="app">
+        	<a href="#">
+                <span>WOORI APP 스마트폰 </span>
+                <span> 원터치개인 / 원터치기업</span>
+            </a>
+        </div>
+        <div id="banner_boxes">
+        	<div id="card">
+            	<a href="#">
+                    <p>아이행복카드</p>
+                    <p>어린이집과&nbsp;<span>유치원에서&nbsp;</span><span>통합결제 가능!</span><br />다양한 혜택을<span>&nbsp;누리세요~</span></p>
+                </a>
+            </div>
+        	<div id="app_change">
+            	<a href="#">
+                    <p class="p1">알림</p>
+                    <p class="p2">새롭게 바뀝니다!</p>
+                    <p>원터치 개인 APP</p>
+                </a>
+            </div>
+        	<div id="exchange_event">
+            	<a href="#">
+                    <p class="p1">이벤트</p>
+                    <p class="p2">2015 온국민<br /> 환전이벤트</p>
+                </a>
+            </div>
+        </div>
+    </div><!--banner//-->
+    
+    <div id="content">
+    	<ul id="big_btns">
+        	<li><a href="#">전계좌조회</a></li>
+        	<li><a href="#">즉시이체</a></li>
+        	<li><a href="#">스피드계좌조회</a></li>
+        	<li><a href="#">기념주화</a></li>
+        	<li><a href="#">영업점안내</a></li>
+        	<li><a href="#">환율조회</a></li>
+        	<li><a href="#">퇴직연금</a></li>
+        	<li><a href="#">전자민원접수<br />금융소비자보호</a></li>
+        	<li><a href="#">우리가족<br />우대서비스</a></li>
+        </ul>
+        <section id="bbs">
+        	<article id="news">
+            	<h3><a href="#">우리뉴스</a></h3>
+                <p><a href="#">+더보기</a></p>
+                <table>
+                	<tr>
+                    	<td class="title"><a href="#">[공지] '우리 주거래 패키지' 상품명 변경 안내</a></td>
+                        <td class="date"><span>2015.09.16</span></td>
+                    </tr>
+                	<tr>
+                    	<td class="title"><a href="#">[공지] FX트레이딩 플러스 서비스 종료 안내</a></td>
+                        <td class="date"><span>2015.09.15</span></td>
+                    </tr>
+                	<tr>
+                    	<td class="title"><a href="#">[공지] 장기 미거래 신탁계좌를 찾아드립니다</a></td>
+                        <td class="date"><span>2015.09.12</span></td>
+                    </tr>
+                	<tr>
+                    	<td class="title"><a href="#">[공지] '위비 SOHO 모바일 신용대출' 신상품.....</a></td>
+                        <td class="date"><span>2015.09.11</span></td>
+                    </tr>
+                </table>
+            </article>
+            <article id="event">
+            	<h3><a href="#">이벤트</a></h3>
+                <p><a href="#">+더보기</a></p>
+                <table>
+                	<tr>
+                    	<td class="title"><a href="#">우리 삼성페이 가맹점 확대 기념 이벤트</a></td>
+                        <td class="date">2015.09.16</td>
+                    </tr>
+                	<tr>
+                    	<td class="title"><a href="#">제 52회 저축의 날 기념 그림 공모전</a></td>
+                        <td class="date">2015.09.15</td>
+                    </tr>
+                	<tr>
+                    	<td class="title"><a href="#">현금카드(전국호환 교통카드) 예약 신규 ......</a></td>
+                        <td class="date">2015.09.12</td>
+                    </tr>
+                	<tr>
+                    	<td class="title"><a href="#">우리선불충전 서비스 오픈 기념 이벤트</a></td>
+                        <td class="date">2015.09.11</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </div><!--content//-->
+    
+    <footer id="main_footer">
+    	<a id="f_logo" href="#"><img src="images/f_logo.png" alt="푸터로고" /></a>
+        <div id="f_corp">
+        	<address>은행상담 1588-5000 1599-5000 (해외 82-2-2006-5000)</address>
+            <address>고객의 말씀 080-365-5000 (휴대폰 02-2008-5000)</address>
+            <address>국민주택기금상담 1599-0800  | 외국인전용 1599-2288</address>
+        
+			<span><a href="#">은행소개 |</a></span>
+			<span><a href="#">영업점안내 |</a></span>
+			<span><a href="#">고객광장 |</a></span>
+			<span><a href="#">개인정보처리(취급)방침 |</a></span>
+			<span><a href="#">개인신용정보관리보호 |</a></span>
+			<span><a href="#">사고신고 |</a></span>
+			<span><a href="#">전자민원접수 |</a></span>
+			<span><a href="#">보호금융상품등록부 |</a></span>
+			<span><a href="#">상품공시실 |</a></span>
+			<span><a href="#">보안센터 |</a></span>
+			<span><a href="#">웹접근성 이용안내</a></span>
+            
+            <address>COPYRIGHTS WOORI BANK. ALL RIGHTS RESERVED.</address>
+        </div>
+        <fieldset id="f_right">
+        	<select id="fml_site">
+            	<option>패밀리 사이트</option>
+            	<option>우리에프아이에스</option>
+            	<option>우리신용정보</option>
+            	<option>우리다문화장학재단</option>
+            	<option>우리펀드서비스</option>
+            	<option>우리미소금융재단</option>
+            	<option>우리금융경영연구소</option>
+            	<option>우리종합금융</option>
+            </select>
+            <select>
+            	<option>LANGUAGE</option>
+            	<option>English</option>
+            	<option>Chinese (中國語)</option>
+            	<option>Japanese (日本語)</option>
+            	<option>Filipino (Tagalog)</option>
+            	<option>Vietnamese (tiếng Việt)</option>
+            	<option>Mongolian (Монгол хэл)</option>
+            </select>
+            <div id="sns">
+                <input type="image" src="images/sns_01.png" />
+                <input type="image" src="images/sns_02.png" />
+                <input type="image" src="images/sns_03.png" />
+                <input type="image" src="images/sns_04.png" />
+                <input type="image" src="images/sns_05.png" />
+           	</div>
+        </fieldset>
+    </footer>
+</body>
+</html>
+
+

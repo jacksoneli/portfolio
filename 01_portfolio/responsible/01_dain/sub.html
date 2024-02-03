@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>다인치과 서브페이지</title>
+<link rel="shortcut icon" href="images/shortcut_icon.png" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="CSS/reset.css" />
+<link rel="stylesheet" href="CSS/sub_p_master.css" media="screen and (min-width:980px)" />
+<link rel="stylesheet" href="CSS/sub_t_master.css" media="screen and (min-width:760px) and (max-width:979px)" />
+<link rel="stylesheet" href="CSS/sub_m_master.css" media="screen and (max-width:759px)" />
+<script src="libs/jquery-1.7.1.min.js"></script>
+<script src="libs/jquery.easing.1.3.js"></script>
+</head>
+
+<body>
+	<header id="main_header">
+        <h1 id="logo"><a href="index.html">logo</a></h1>
+        <h2 id="m_login"><a href="sub.html">mobile login</a></h2>
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" id="toggle_label" onClick="">메뉴 펼치는 버튼</label>
+        <nav id="main_nav">
+        	<ul id="gnb">
+            	<li><a href="sub.html">다인소개</a>
+                	<ul class="moblie_blind">
+                    	<li><a href="sub.html">다인 비전</a></li>
+                    	<li><a href="sub.html">진료 안내</a></li>
+                    	<li><a href="sub.html">다인 피플</a></li>
+                    	<li><a href="sub.html">다인 시스템</a></li>
+                    	<li><a href="sub.html">외국인 진료</a></li>
+                    	<li><a href="sub.html">내부 전경</a></li>
+                    	<li><a href="sub.html">오시는 길</a></li>
+                    </ul>
+                </li>
+            	<li><a href="sub.html">치아교정</a>
+                	<ul class="moblie_blind">
+                    	<li><a href="sub.html">다인 치아교정의 특별함</a></li>
+                    	<li><a href="sub.html">교정치료의 대상 및 시기</a></li>
+                    	<li><a href="sub.html">주의사항 및 보증제</a></li>
+                    	<li><a href="sub.html">치아교정 FAQ</a></li>
+                    	<li><a href="sub.html">증례사진</a></li>
+                    	<li><a href="sub.html">치아교정 논문</a></li>
+                    </ul>
+                </li>
+            	<li><a href="sub.html">임플란트</a>
+                	<ul class="moblie_blind">
+                    	<li><a href="sub.html">다인 임플란트</a></li>
+                    	<li><a href="sub.html">임플란트 시술유형</a></li>
+                    	<li><a href="sub.html">유지관리 및 보증제</a></li>
+                    	<li><a href="sub.html">임플란트 FAQ</a></li>
+                    	<li><a href="sub.html">증례사진</a></li>
+                    	<li><a href="sub.html">임플란트 논문</a></li>
+                    </ul>
+                </li>
+            	<li><a href="sub.html">심미치료</a>
+                	<ul class="moblie_blind">
+                    	<li><a href="sub.html">다인 심미치료</a></li>
+                    	<li><a href="sub.html">1Day 세렉시스템</a></li>
+                    	<li><a href="sub.html">치아미백</a></li>
+                    	<li><a href="sub.html">잇몸성형</a></li>
+                    	<li><a href="sub.html">잇몸미백</a></li>
+                    	<li><a href="sub.html">심미치료FAQ</a></li>
+                    	<li><a href="sub.html">증례사진</a></li>
+                    	<li><a href="sub.html">심미치료 논문</a></li>
+                    </ul>
+                </li>
+            	<li><a href="sub.html">일반진료</a>
+                	<ul class="moblie_blind">
+                    	<li><a href="sub.html">의식하진정요법</a></li>
+                    	<li><a href="sub.html">충치치료</a></li>
+                    	<li><a href="sub.html">근관치료</a></li>
+                    	<li><a href="sub.html">사랑니</a></li>
+                    	<li><a href="sub.html">스케일링</a></li>
+                    	<li><a href="sub.html">잇몸질환</a></li>
+                    	<li><a href="sub.html">틀니</a></li>
+                    	<li><a href="sub.html">예방치료</a></li>
+                    	<li><a href="sub.html">턱관절장애</a></li>
+                    	<li><a href="sub.html">일반진료 FAQ</a></li>
+                    	<li><a href="sub.html">증례사진</a></li>
+                    	<li><a href="sub.html">일반진료 논문</a></li>
+                    </ul>
+                </li>
+            	<li><a href="sub.html">상담 및 예약</a>
+                	<ul class="moblie_blind">
+                    	<li><a href="sub.html">온라인상담</a></li>
+                    	<li><a href="sub.html">카카오톡상담</a></li>
+                    	<li><a href="sub.html">비용상담</a></li>
+                    	<li><a href="sub.html">온라인예약</a></li>
+                    	<li><a href="sub.html">수가표</a></li>
+                    </ul>
+                </li>
+            	<li><a href="sub.html">다인스토리</a>
+                	<ul class="moblie_blind">
+                    	<li><a href="sub.html">공지사항</a></li>
+                    	<li><a href="sub.html">다인뉴스</a></li>
+                    	<li><a href="sub.html">리얼스토리</a></li>
+                    	<li><a href="sub.html">글로벌다인</a></li>
+                    	<li><a href="sub.html">진료후기</a></li>
+                    	<li><a href="sub.html">치료후기</a></li>
+                    	<li><a href="sub.html">증례사진</a></li>
+                    	<li><a href="sub.html">보도자료</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="login">
+            	<li><a href="sub.html">로그인</a></li>
+            	<li><a href="sub.html">회원가입</a></li>
+            	<li><a href="sub.html">이슈&amp;이벤트</a></li>
+            	<li><a href="sub.html">고객의 소리</a></li>
+            </ul>
+            
+            <div id="btn_close">CLOSE</div>
+			<script>
+                window.onload=function(){
+                    $("#btn_close").click(
+                        function(){
+                            $("#toggle").removeAttr("checked");
+                        }
+                    );
+                }
+            </script>
+        </nav>
+    </header>
+    <nav id="right_nav">
+        <ul>
+            <li><a href="sub.html">오시는길</a></li>
+            <li><a href="sub.html">온라인<p>상담</p></a></li>
+            <li><a href="sub.html">온라인<p>예약</p></a></li>
+            <li><a href="sub.html">비용상담</a></li>
+            <li><a href="sub.html">신촌<br />다인치과<br />블로그</a></li>
+        </ul>
+    </nav>
+    
+    <div id="content">
+    	<div id="status" class="moblie_blind">
+        	<a href="index.html">HOME</a>
+            <span>&gt;</span>
+            <a href="#">상담 및 예약</a>
+            <span>&gt;</span>
+            <a href="#"><b>온라인예약</b></a>
+        </div>
+        
+        <div id="con_wrap">
+            <h2>온라인 예약</h2>
+            
+            <div id="notice_box">
+                <div id="notice">
+                    <p>- 정해주신 시간에 예약이 어려운 경우 전화로 알려드립니다.</p>
+                    <p>- 당일 및 하루 전 예약은 전화로 문의해주시기 바랍니다.</p>
+                    <p>- 대표번호 02-719-2275</p>
+                    <br />
+                    <p>- 점심시간 PM 01:00 ~ PM 02:00</p>
+                    <p>- 일요일/공휴일은 휴진입니다.</p>
+                </div>
+            </div>
+            <div id="policy">
+                <h3>- 개인정보 보호정책</h3>
+                <article>
+                    "신촌다인치과병원"은 (이하 '회사'는) 고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다.<br />
+                    회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.<br />
+                    회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.<br />
+                    ο 본 방침은 : 2012 년 8 월 19일 부터 시행됩니다.<br />
+                    <br />
+                    1. 수집하는 개인정보 항목<br />
+                    회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br />
+                    ο 수집항목 : 이름 , 생년월일 , 로그인ID , 비밀번호 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 서비스 이용기록 , 접속 로그 , 쿠키 , 접속 IP 정보 , 자녀생일<br />
+                    ο 개인정보 수집방법 : 홈페이지(회원가입), 이벤트, 체험단 응모 등<br />
+                    <br />
+                    2. 개인정보의 수집 및 이용목적<br />
+                    회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br />
+                    ο 한의원 서비스 이용<br />
+                    온라인상담, 온라인예약, 문자상담, 회원전용 컨텐츠 이용(치료사례, 후기 게시판)<br />
+                    ο 회원 관리<br />
+                    회원제 서비스 이용에 따른 본인확인 , 불만처리 등 민원처리 , 고지사항 전달<br />
+                    ο 마케팅 및 광고에 활용<br />
+                    이벤트 등 광고성 정보 전달<br />
+                    <br />
+                    3. 개인정보의 보유 및 이용기간<br />
+                    회사는 회원가입시부터 회원탈퇴시까지 개인정보를 보유하고, 회원탈퇴시 해당 개인정보를 즉시파기합니다.<br />
+                    <br />
+                    개인정보 제3자 제공 동의<br />
+                    본인은 본 사이트에 기재된 내용이 사실임을 확인하고 본 개인정보의 제공 및 활용동의서에 기재된 목적과 범위 내에서 신촌다인치과병원이 아래의 정보를 직접 사용하거나 참여사, 기타 제휴사/위탁업체에 제공하는 것에 동의합니다.<br /><br /><br />                
+                </article>
+                <div id="agree">
+                	<form>
+                        <input type="checkbox" />
+                        <p>동의</p>
+                    </form>
+                </div>
+            </div>
+            <div id="basic_info">
+                <h3>- 기본정보 입력</h3>
+                <p><b class="star">*</b><span>표시는 필수 입력사항입니다.</span></p>
+                <table id="input_table">
+                    <tr>
+                        <td class="left_col">진료선택<b class="star">*</b></td>
+                        <td>
+                            <form>
+                              <input type="radio" name="treatment_type" value="normal" checked>&nbsp;일반&nbsp;&nbsp;&nbsp;
+                              <input type="radio" name="treatment_type" value="return">&nbsp;재진
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">이름<b class="star">*</b></td>
+                        <td>
+                            <input type="text" name="name" class="long_box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">성별<b class="star">*</b></td>
+                        <td>
+                            <form>
+                              <input type="radio" name="gender" value="male" checked>&nbsp;남성&nbsp;&nbsp;&nbsp;
+                              <input type="radio" name="gender" value="female">&nbsp;여성
+                            </form>                    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">생년월일<b class="star">*</b></td>
+                        <td>
+                            <input type="text" maxlength="4" class="short_box" />
+                            년
+                            <select name="user_birth_month" class="short_box">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            월
+                            <select name="user_birth_day" class="short_box">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            일
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">진료과목<b class="star">*</b></td>
+                        <td>
+                            <select class="long_box">
+                                <option>치아교정</option>
+                                <option>임플란트</option>
+                                <option>심미치료</option>
+                                <option>일반진료</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">휴대폰<b class="star">*</b></td>
+                        <td>
+                            <select class="short_box">
+                                <option>010</option>
+                                <option>011</option>
+                                <option>016</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                            </select>
+                            -
+                            <input type="text" maxlength="4" class="short_box" />
+                            -
+                            <input type="text" maxlength="4" class="short_box" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left_col">보조전화번호</td>
+                        <td>
+                            <select class="short_box">
+                                <option value="02" selected="selected">02</option>
+                                <option value="031">031</option>
+                                <option value="032">032</option>
+                                <option value="033">033</option>
+                                <option value="041">041</option>
+                                <option value="042">042</option>
+                                <option value="043">043</option>
+                                <option value="051">051</option>
+                                <option value="052">052</option>
+                                <option value="053">053</option>
+                                <option value="054">054</option>
+                                <option value="055">055</option>
+                                <option value="061">061</option>
+                                <option value="063">063</option>
+                                <option value="062">062</option>
+                                <option value="064">064</option>
+                                <option value="070">070</option>
+                            </select>
+                            -
+                            <input type="text" maxlength="4" class="short_box" />
+                            -
+                            <input type="text" maxlength="4" class="short_box" />
+                        </td>
+                    </tr>
+                </table>
+            </div> <!-- basic info //-->
+            <div id="date_time">
+                <h3>- 날짜 / 시간 선택</h3>
+                
+                <div id="date">
+                    <p id="date_choose">날짜 선택</p>
+                    <p id="currentMon">
+                    	<a href="#" class="mBt" id="btnPrvMonth"><img src="images/btn_monthL.gif" alt="이전 달 보기"></a>
+                        <span>2015년 10월</span>
+                        <a href="#" class="mBt" id="btnNxtMonth"><img src="images/btn_monthR.gif" alt="다음 달 보기"></a>
+                    </p>
+                            <div id="month_table" class="boradMonth">
+                                <table class="" summary="달력 테이블입니다.">
+                                    <colgroup>
+                                        <col width="58px">
+                                        <col width="58px">
+                                        <col width="58px">
+                                        <col width="58px">
+                                        <col width="58px">
+                                        <col width="58px">
+                                        <col width="58px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">일</th>
+                                            <th scope="col">월</th>
+                                            <th scope="col">화</th>
+                                            <th scope="col">수</th>
+                                            <th scope="col">목</th>
+                                            <th scope="col">금</th>
+                                            <th scope="col" class="end">토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td class="last"><a href="javascript:" data-date="">1</a></td><td class="last"><a href="javascript:" data-date="">2</a></td><td class="last end"><a href="javascript:" data-date="">3</a></td></tr><tr><td class="last"><a href="javascript:" data-date="">4</a></td><td class="last"><a href="javascript:" data-date="">5</a></td><td class="last"><a href="javascript:" data-date="">6</a></td><td class="last"><a href="javascript:" data-date="">7</a></td><td class="last"><a href="javascript:" data-date="">8</a></td><td class="last"><a href="javascript:" data-date="">9</a></td><td class="last end"><a href="javascript:" data-date="">10</a></td></tr><tr><td class="last"><a href="javascript:" data-date="">11</a></td><td class="last"><a href="javascript:" data-date="">12</a></td><td class="last"><a href="javascript:" data-date="">13</a></td><td class="last"><a href="javascript:" data-date="">14</a></td><td class="last"><a href="javascript:" data-date="">15</a></td><td class="last"><a href="javascript:" data-date="">16</a></td><td class="last end"><a href="javascript:" data-date="">17</a></td></tr><tr><td class="last"><a href="javascript:" data-date="">18</a></td><td class="last"><a href="javascript:" data-date="">19</a></td><td class="last"><a href="javascript:" data-date="">20</a></td><td class="last"><a href="javascript:" data-date="">21</a></td><td class="last"><a href="javascript:" data-date="">22</a></td><td class="last"><a href="javascript:" data-date="">23</a></td><td class="last end"><a href="javascript:" data-date="">24</a></td></tr><tr><td class="last"><a href="javascript:" data-date="">25</a></td><td class="last"><a href="javascript:" data-date="">26</a></td><td class="last"><a href="javascript:" data-date="">27</a></td><td class="last"><a href="javascript:" data-date="">28</a></td><td class="last"><a href="javascript:" data-date="" class="on">29</a></td><td><a href="javascript:" data-date="2015-10-30">30</a></td><td class="end"><a href="javascript:" data-date="2015-10-31">31</a></td></tr><tr>
+                                    </tr></tbody>
+                                </table>
+                            </div>
+                    <p id="selected_date">&nbsp;&nbsp;&nbsp;2015년&nbsp;&nbsp;&nbsp;10월&nbsp;&nbsp;&nbsp;29일</p>
+                </div><!--date //-->
+                <div id="time">
+                    <p id="time_choose">시간 선택</p>
+                    <table id="time_table">
+                        <tr>
+                            <td><a href="#">9:30</a></td>
+                            <td><a href="#">10:00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">10:30</a></td>
+                            <td><a href="#" class="time_on">11:00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">11:30</a></td>
+                            <td><a href="#">12:00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">12:30</a></td>
+                            <td><a href="#">14:00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">14:30</a></td>
+                            <td><a href="#">15:00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">15:30</a></td>
+                            <td><a href="#">16:00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">16:30</a></td>
+                            <td><a href="#">17:00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">17:30</a></td>
+                            <td><a href="#">18:00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">18:30</a></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div> <!--time//-->
+                <div id="confirm_btn">
+                    <a href="#">예약요청&nbsp;&gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="main_footer">
+        <div id="f_corp">
+			<span><a href="sub.html">병원소개</a></span>
+			<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			<span><a href="sub.html">회원약관</a></span>
+			<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			<span><a href="sub.html">개인정보취급방침</a></span>
+			<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			<span><a href="sub.html">이메일무단수집거부</a></span>
+            
+            <address>서울시 마포구 노고산동 5-1 신촌그랜드마트 10,11층</address>
+            <address>사업자등록번호 105-20-98831 대표:임흥빈</address>
+            <address>이메일 : scdaindental@scdaindental.co.kr</address>
+            <address>COPYRIGHT &copy; SCDAINDENTAL ALL RIGHT RESERVED.</address>
+        </div>
+    </footer>
+</body>
+</html>

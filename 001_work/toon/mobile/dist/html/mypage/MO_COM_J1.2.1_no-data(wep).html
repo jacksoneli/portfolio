@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<meta name="format-detection" content="telephone=no" />
+	<title></title>
+	<meta name="keywords" content="스토리잼" />
+	<meta name="description" content="스토리잼입니다." />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image" content="../../../images/meta_image.png">
+    <link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/mypage.css" />
+</head>
+<body ontouchstart="">
+	<div id="wrap">
+		<header id="header">
+			<div class="offset">
+				<h1>내서재</h1>
+                <a class="btn_cancle" href="#"><span class="blind">닫기</span></a>
+			</div>
+		</header>
+		<section class="body-section">
+			<div id="container">
+				<div class="contents pd0">
+				    <nav class="fix_tab_wrap">
+				        <ul class="bsic_tabs fix clearfix js_tabs">
+				            <li class="on"><span>최근 본</span></li>
+                            <li class="dot"><span>구독</span></li><!--class dot : 붉은 점 활성화-->
+                            <li><span>대여/소장</span></li>
+				        </ul>
+				    </nav>
+				    
+				    <!--최근 본-->
+				    <div class="js_conts">
+				        <div class="empty_notice js_vert_mid">최근 본 스토리가 없습니다.</div>
+				    </div>
+
+				    <!--구독-->
+				    <div class="js_conts" style="display: none;">
+                    </div>
+				    
+				    <!--대여/소장-->
+				    <div class="js_conts" style="display: none;">
+                    </div>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+        //탭
+        $(".js_tabs > li").bind('click',function(){
+            var index = $(this).index();
+            $(".js_conts").hide().eq(index).show();
+            $(this).parent().find('li').removeClass('on');
+            $(this).addClass('on');
+        });
+        
+        //no data 메시지 세로 중앙 정렬
+        $(document).ready(function(){
+            var win_h = window.innerHeight - 100,
+                con_h = 22,
+                mt = (win_h - con_h) / 2;
+            $('.js_vert_mid').css({marginTop : mt + 'px'});
+        });        
+    </script>
+</body>
+</html>

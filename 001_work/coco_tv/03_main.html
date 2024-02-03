@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="robots" content="index,nofollow">
+    <meta name="description" content="코코티비 방송 서비스 개발 프로젝트">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <meta property="og:title" content="코코티비 방송 서비스 개발 프로젝트">
+    <meta property="og:url" content="http://qw.cocotv.com/">
+    <!-- <meta property="og:image" content=""> -->
+    <!-- <meta property="og:description" content="코코티비 방송 서비스 개발 프로젝트"> -->
+
+    <title>코코티비 방송 서비스 개발 프로젝트</title>
+   
+    <script
+    src="http://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/dropbox.js"></script>
+   
+    <!-- 안드로이드, 아이폰 모두 사용 가능한 태그 -->
+    <link rel="apple-touch-icon-precomposed" href="./imgs/app_icon.png"> 
+
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sub.css">
+</head>
+<body>
+    <header class="header_back"></header>
+    <header class="header">
+        <aside class="search">
+            <i class="icon-common icon-search"></i>
+        </aside>
+        <a class="logo"><img href="#" src="imgs/logo.svg" alt="코코티비 로고"></a>
+        <!-- <aside class="bookmark">
+            <i class="icon-common icon-bookmark"></i>
+        </aside> -->
+        <nav class="menu">
+            <i class="icon-common icon-hambug"></i>
+        </nav>
+    </header>
+    <main>
+        <section id="main_slide">
+            <h2 class="blind">메인 슬라이더</h2>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./imgs/main_slide01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./imgs/main_slide01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./imgs/main_slide01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./imgs/main_slide01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./imgs/main_slide01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./imgs/main_slide01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./imgs/main_slide01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./imgs/main_slide01.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section>
+            <h2 class="blind">코코티비 랭크</h2>
+            <article class="ranking">
+                <header class="header_sub clearfix">
+                    <h2>Ranking</h2>
+                    <a href="#" class="more">더보기 ▶</a>
+                </header>
+                <div class="clearfix">
+                    <ol class="circle_list">
+                    <li>
+                        <div class="circle_group">
+                            <div class="circle_img active">
+                                <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                            </div>
+                            <span class="on">ON</span>
+                        </div>
+                        <h3><span class="rank_num">1</span> stellama55ma7245</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile"><!--class open_profile이 있는 것을 클릭하면 프로필 레이어가 열림 -->
+                            <div class="circle_img"></div>
+                        </div>
+                        <h3><span class="rank_num">2</span> stellamam</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group">
+                            <div class="circle_img active">
+                                <img src="./imgs/circle_img_sample2.jpg" alt="이미지">
+                            </div>
+                            <span class="on">ON</span>
+                        </div>
+                        <h3><span class="rank_num">3</span> bella99</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample3.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">4</span> flora</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample4.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">1</span> stellama55ma7245</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">6</span> stellamama007245</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">7</span> stellamama007245</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">8</span> stellamama007245</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">9</span> stellamama007245</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">10</span> stellamama007245</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">11</span> stellamama007245</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">12</span> stellamama007245</h3>
+                    </li>
+                    <li>
+                        <div class="circle_group open_profile">
+                            <div class="circle_img">
+                                <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <h3><span class="rank_num">13</span> stellamama007245</h3>
+                    </li>
+                    </ol>
+                </div>
+            </article>    
+            <article class="radius_box ranking_live">
+                <div>
+                    <div class="img_thumb_big">
+                        <span class="tag tag-md tag-live">Live</span>
+                        <div class="bg_blur_img"><img src="./imgs/live_big_bg.jpg" alt="메인이미지"></div>
+                        <div class="main_img"><img src="./imgs/live_big.jpg" alt="메인이미지"></div>
+<!--                        <span class="tag tag-md tag-premium">PREMIUM</span>-->
+                        <span class="tag tag-md tag-class">Class</span>
+                    </div>
+                </div>
+                <header>
+                    <h4>제인의 하루- 오늘 같이 저녁 먹어요 ^^</h4>
+                </header>
+                <footer>
+                    <ul class="clearfix">
+                    <li class="yellow bold">jane07</li>
+                    <li><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</li>
+                    <li><i class="icon-common icon-like"></i> 210</li>
+                    <!--<li><span class="tag tag-premium">프리미엄 클라스</span></li>-->
+                    </ul>
+                    <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                </footer>
+            </article>   
+        </section>
+        <section class="container">
+            <h2 class="blind">라이브 방송</h2>
+            <header class="header_sub clearfix">
+                <h2>Live</h2>
+                <a href="#" class="more">더보기 ▶</a>
+            </header>
+            <article class="radius_box live_list mt0">
+                <h3 class="blind">라이브 방송BJ</h3>
+                <div class="clearfix">
+                    <div class="img_thumb">
+                        <span class="tag tag-sm tag-live">Live</span>
+                        <!--<span class="tag tag-sm tag-class">4 Class</span>-->
+                    </div>
+                    <ul>
+                    <li class="align_right tag_area">
+                        <!--<span class="tag tag-premium">프리미엄 클라스</span>-->
+<!--                        <span class="tag tag-premium">PREMIUM</span>-->
+                        <span class="tag tag-md tag-class">Class</span>
+                    </li>
+                    <li class="contents_text">
+                        사라의 금요일 미스터리 무서운 이야기 들려드릴께요.. 
+                    </li>
+                    <li class="status">
+                        <dl class="clearfix">
+                            <dt class="yellow bold">sara32</dt>
+                            <dd><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</dd>
+                            <dd><i class="icon-common icon-like"></i> 210</dd>
+                        </dl>
+                        <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                    </li>
+                    </ul>
+                </div>
+            </article> 
+            <article class="radius_box live_list">
+                <h3 class="blind">라이브 방송BJ</h3>
+                <div class="clearfix">
+                    <div class="img_thumb" style="background-image:url(./imgs/live_thumb_sample3.jpg)">
+                        <span class="tag tag-sm tag-live">Live</span>
+                        <!--<span class="tag tag-sm tag-class">4 Class</span>-->
+                    </div>
+                    <ul>
+                    <li class="align_right tag_area">
+                        <!--<span class="tag tag-open">오픈 클라스</span>-->
+<!--                        <span class="tag tag-premium">PREMIUM</span>-->
+<!--                        <span class="tag tag-md tag-class">Class</span>-->
+                    </li>
+                    <li class="contents_text">
+                        줄리아와 불금불금!!
+                    </li>
+                    <li class="status">
+                        <dl class="clearfix">
+                            <dt class="yellow bold">sara32</dt>
+                            <dd><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</dd>
+                            <dd><i class="icon-common icon-like"></i> 210</dd>
+                        </dl>
+                        <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                    </li>
+                    </ul>
+                </div>
+            </article> 
+            <article class="radius_box live_list">
+                <h3 class="blind">라이브 방송BJ</h3>
+                <div class="clearfix">
+                    <div class="img_thumb no_img">
+                        <span class="tag tag-sm tag-live">Live</span>
+                        <!--<span class="tag tag-sm tag-class">4 Class</span>-->
+                    </div>
+                    <ul>
+                    <li class="align_right tag_area">
+                        <!--<span class="tag tag-open">오픈 클라스</span>-->
+                        <span class="tag tag-md tag-class">Class</span>
+                    </li>
+                    <li class="contents_text">
+                        줄리아와 불금불금!!
+                    </li>
+                    <li class="status">
+                        <dl class="clearfix">
+                            <dt class="yellow bold">sara32</dt>
+                            <dd><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</dd>
+                            <dd><i class="icon-common icon-like"></i> 210</dd>
+                        </dl>
+                        <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                    </li>
+                    </ul>
+                </div>
+            </article> 
+        </section>
+    </main>
+    
+    <!-- 사이드바 -->
+    <div class="modal sidebar animated">
+        <aside class="language">
+            <a href="#"><button type="button" class="btn-sprite btn_eng">Eng</button></a>
+        </aside>
+        <aside class="modify">
+            <a href="#n"><img src="imgs/modify.png" alt="설정"></a>
+        </aside>
+        <main>
+            <ul class="login_after">
+                <li>
+                    <div class="user_img">
+                        <span class="shot_profile"><i class="icon-common icon-camera"></i></span>
+                        <!-- 이미지 존재 여부에 따라 기본 이미지(CocoTv 표기) -->
+                        <img src="./imgs/live_thumb_sample.jpg" alt="유저이미지">
+                    </div>
+                </li>
+                <li class="id_text">
+                    cocorong01
+                </li>
+                <li class="user_mail">
+                    cocorong0111@gmail.com
+                </li>
+                <!--BJ 로그인 시-->
+                <li class="comment">
+                    코코롱과 함께하는 방송국 입니다.<br>즐거운 하루 되세요.
+                </li>
+                <li class="profile">
+                    <a href="#n">프로필 관리</a>
+                </li>
+            </ul>
+            <button type="button" class="btn-sprite btn_recharge">충전하기</button>
+        </main>
+        
+        <!--유저, 보상매니저 메뉴-->
+        <nav>
+            <ul>
+                <li><a class="clearfix" href="#n"><span class="tit">보유토큰</span><span class="detail">1,0000</span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">아이템</span><span class="detail">1000개</span></a></li>
+                <!--보상주번--><li><a class="clearfix" href="#n"><span class="tit">M.포인트</span><span class="detail">100p</span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">팔로우</span><span class="detail">100명</span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">마이클라스</span><span class="detail">100개</span></a></li>
+            </ul>
+            <ul>
+                <li><a class="clearfix" href="#n"><span class="tit">라이브</span><span class="detail align_right"><b>N</b></span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">코코랭킹</span><span class="detail align_right"><b>N</b></span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">전체편성표</span><span class="detail align_right"><b>N</b></span></a></li>
+            </ul>
+            <ul>
+                <li><a class="clearfix" href="#n"><span class="tit">피드</span><span class="detail align_right"><b>N</b></span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">설정</span><span class="detail align_right"></span></a></li>
+            </ul>
+        </nav>
+        <footer>
+            <a href="#"><i class="icon-common icon-mic"></i> 코코티비 방송진행자 지원</a>
+        </footer>
+        
+        <!--BJ 메뉴-->
+        <nav>
+            <ul>
+                <li><a class="clearfix" href="#n"><span class="tit">방송하기</span></a></li>
+                <li>
+                    <a class="clearfix more_depth" href="#n"><span class="tit">방송관리</span></a>
+                    <div class="depth2">
+                        <a href="#n">방송목록</a>
+                        <a href="#n">편성관리</a>
+                        <a href="#n">방송목록</a>
+                        <a href="#n">방송목록</a>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li><a class="clearfix" href="#n"><span class="tit">받은토큰</span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">보유토큰</span><span class="detail">1,0000</span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">아이템</span><span class="detail">1000개</span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">팔로우</span><span class="detail">100명</span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">마이클라스</span><span class="detail">100개</span></a></li>
+            </ul>
+            <ul>
+                <li><a class="clearfix" href="#n"><span class="tit">라이브</span><span class="detail align_right"><b>N</b></span></a></li>
+                <li><a class="clearfix" href="#n"><span class="tit">코코랭킹</span><span class="detail align_right"><b>N</b></span></a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Contents Options Layer Modal -->
+    <div class="modal layer_option">
+        <button>공유하기</button>
+        <button>좋아요</button>
+        <button>팔로우</button>
+        <button class="btn_canel">취소</button>
+    </div>
+
+    <!-- Search Layer Modal -->
+    <div class="modal layer_search animated">
+        <form action="" class="search_form">
+            <i class="icon-common icon-searchOn"></i>
+            <input type="text" placeholder="Search">
+            <button type="button" class="search_close"><i class="icon-common icon-searchClose"></i></button>
+        </form>
+        <!--입력전-->
+        <div class="tags_wrap">
+            <h3>Trend Tags</h3>
+            <div class="tags_list">
+                <button>#jane07</button>
+                <button>#hellagogo</button>
+                <button>#cocotv</button>
+                <button>#flora99</button>
+                <button>#sara32 리방</button>
+                <button>#cocotv ranking</button>
+                <button>#bella30</button>
+            </div>
+        </div>
+        <!--드롭박스-->
+        <div class="dropDown">
+            <a href="#" class="btn_drop">전체</a>
+            <div class="dropBox">
+                <ul>
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">BJ</a></li>
+                    <li><a href="#">LIVE</a></li>
+                    <li><a href="#">VOD</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--전체결과-->
+        <div class="srch_result">
+            <div class="top_area clearfix">
+                <h5>BJ<span>(4명)</span></h5>
+                <a href="#n" class="more">More &gt;</a><!--전체 검색이 아닌 경우에는 more가 나타나지 않아야 함-->
+            </div>
+            <div class="result_bj">
+                <div class="circle_group clearfix open_profile">
+                    <div class="circle_img active">
+                        <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                    </div>
+                    <div class="right_area">abbbc123</div>
+                </div>
+                <div class="circle_group clearfix open_profile">
+                    <div class="circle_img active">
+                        <img src="./imgs/circle_img_sample2.jpg" alt="이미지">
+                    </div>
+                    <div class="right_area">abc123</div>
+                </div>
+                <div class="circle_group clearfix open_profile">
+                    <div class="circle_img active">
+                        <img src="./imgs/circle_img_sample.jpg" alt="이미지">
+                    </div>
+                    <div class="right_area">abbbc123</div>
+                </div>
+                <div class="circle_group clearfix open_profile">
+                    <div class="circle_img active">
+                        <img src="./imgs/circle_img_sample2.jpg" alt="이미지">
+                    </div>
+                    <div class="right_area">abc123</div>
+                </div>
+            </div>
+            <div class="top_area clearfix">
+                <h5>LIVE<span>(4개)</span></h5>
+                <a href="#n" class="more">More &gt;</a><!--전체 검색이 아닌 경우에는 more가 나타나지 않아야 함-->
+            </div>
+            <div class="mb10">
+                <article class="radius_box live_list">
+                    <h3 class="blind">라이브 방송BJ</h3>
+                    <div class="clearfix">
+                        <div class="img_thumb" style="background-image:url(./imgs/live_thumb_sample3.jpg)">
+                            <span class="tag tag-sm tag-live">Live</span>
+                            <!--<span class="tag tag-sm tag-class">4 Class</span>-->
+                        </div>
+                        <ul>
+                        <li class="align_right tag_area">
+                            <!--<span class="tag tag-open">오픈 클라스</span>-->
+                            <span class="tag tag-md tag-class">30 Class</span>
+                        </li>
+                        <li class="contents_text">
+                            줄리아와 불금불금!!
+                        </li>
+                        <li class="status">
+                            <dl class="clearfix">
+                                <dt class="yellow bold">sara32</dt>
+                                <dd><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</dd>
+                                <dd><i class="icon-common icon-like"></i> 210</dd>
+                            </dl>
+                            <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                        </li>
+                        </ul>
+                    </div>
+                </article> 
+                <article class="radius_box live_list">
+                    <h3 class="blind">라이브 방송BJ</h3>
+                    <div class="clearfix">
+                        <div class="img_thumb">
+                            <span class="tag tag-sm tag-live">Live</span>
+                            <!--<span class="tag tag-sm tag-class">4 Class</span>-->
+                        </div>
+                        <ul>
+                        <li class="align_right tag_area">
+                            <!--<span class="tag tag-premium">프리미엄 클라스</span>-->
+                            <span class="tag tag-premium">PREMIUM</span>
+                            <span class="tag tag-md tag-class">8 Class</span>
+                        </li>
+                        <li class="contents_text">
+                            사라의 금요일 미스터리 무서운 이야기 들려드릴께요.. 
+                        </li>
+                        <li class="status">
+                            <dl class="clearfix">
+                                <dt class="yellow bold">sara32</dt>
+                                <dd><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</dd>
+                                <dd><i class="icon-common icon-like"></i> 210</dd>
+                            </dl>
+                            <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                        </li>
+                        </ul>
+                    </div>
+                </article> 
+                <article class="radius_box live_list">
+                    <h3 class="blind">라이브 방송BJ</h3>
+                    <div class="clearfix">
+                        <div class="img_thumb" style="background-image:url(./imgs/live_thumb_sample3.jpg)">
+                            <span class="tag tag-sm tag-live">Live</span>
+                            <!--<span class="tag tag-sm tag-class">4 Class</span>-->
+                        </div>
+                        <ul>
+                        <li class="align_right tag_area">
+                            <!--<span class="tag tag-open">오픈 클라스</span>-->
+                            <span class="tag tag-md tag-class">30 Class</span>
+                        </li>
+                        <li class="contents_text">
+                            줄리아와 불금불금!!
+                        </li>
+                        <li class="status">
+                            <dl class="clearfix">
+                                <dt class="yellow bold">sara32</dt>
+                                <dd><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</dd>
+                                <dd><i class="icon-common icon-like"></i> 210</dd>
+                            </dl>
+                            <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                        </li>
+                        </ul>
+                    </div>
+                </article> 
+                <article class="radius_box live_list">
+                    <h3 class="blind">라이브 방송BJ</h3>
+                    <div class="clearfix">
+                        <div class="img_thumb">
+                            <span class="tag tag-sm tag-live">Live</span>
+                            <!--<span class="tag tag-sm tag-class">4 Class</span>-->
+                        </div>
+                        <ul>
+                        <li class="align_right tag_area">
+                            <!--<span class="tag tag-premium">프리미엄 클라스</span>-->
+                            <span class="tag tag-premium">PREMIUM</span>
+                            <span class="tag tag-md tag-class">8 Class</span>
+                        </li>
+                        <li class="contents_text">
+                            사라의 금요일 미스터리 무서운 이야기 들려드릴께요.. 
+                        </li>
+                        <li class="status">
+                            <dl class="clearfix">
+                                <dt class="yellow bold">sara32</dt>
+                                <dd><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</dd>
+                                <dd><i class="icon-common icon-like"></i> 210</dd>
+                            </dl>
+                            <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                        </li>
+                        </ul>
+                    </div>
+                </article> 
+            </div>
+            <div class="top_area clearfix">
+                <h5>VOD<span>(2개)</span></h5>
+                <a href="#n" class="more">More &gt;</a><!--전체 검색이 아닌 경우에는 more가 나타나지 않아야 함-->
+            </div>
+            <div>
+                <article class="radius_box live_list">
+                    <h3 class="blind">VOD 방송BJ</h3>
+                    <div class="clearfix">
+                        <div class="img_thumb" style="background-image:url(./imgs/live_thumb_sample3.jpg)">
+                            <span class="time">01:39:26</span>
+                        </div>
+                        <ul>
+                            <li class="align_right tag_area">
+                                <span class="tag tag-md tag-class">30 Class</span>
+                            </li>
+                            <li class="contents_text">
+                                줄리아와 불금불금!!
+                            </li>
+                            <li class="status">
+                                <dl class="clearfix">
+                                    <dt class="yellow bold">sara32</dt>
+                                    <dd><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</dd>
+                                    <dd><i class="icon-common icon-like"></i> 210</dd>
+                                </dl>
+                                <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </article> 
+                <article class="radius_box live_list">
+                    <h3 class="blind">VOD 방송BJ</h3>
+                    <div class="clearfix">
+                        <div class="img_thumb">
+                        </div>
+                        <ul>
+                            <li class="align_right tag_area">
+                                <span class="tag tag-premium">PREMIUM</span>
+                                <span class="tag tag-md tag-class">8 Class</span>
+                            </li>
+                            <li class="contents_text">
+                                사라의 금요일 미스터리 무서운 이야기 들려드릴께요.. 
+                            </li>
+                            <li class="status">
+                                <dl class="clearfix">
+                                    <dt class="yellow bold">sara32</dt>
+                                    <dd><i class="icon-common icon-curren_user"></i> <span class="yellow">2</span>/5</dd>
+                                    <dd><i class="icon-common icon-like"></i> 210</dd>
+                                </dl>
+                                <button type="button" class="btn_option"><i class="icon-common icon-option"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </article> 
+            </div>
+        </div>
+    </div>
+    
+    <!--프로필 레이어-->
+    <div class="profile_layer modal_layer modal">
+        <div class="upper">
+            <button class="edit">edit</button>
+            <span>마틸다와 함께하는 방송국 입니다.<br>오늘도 즐거운 방송 함께해요^^<button class="btn"><img src="imgs/sub/pencil.png" alt="수정"></button></span>
+        </div>
+        <div class="mid">
+            <div class="round_wrap">
+                <img src="imgs/circle_img_sample4.jpg">
+            </div><!--img 없는 경우에는 디폴트 이미지가 나오게 돼 있음-->
+            <span class="icon_on">ON</span>
+            <button class="cam"><img src="imgs/sub/camera.png" alt="이미지수정"></button>
+        </div>
+        <div class="lower">
+            <p>matilda sinamon</p>
+            <div class="btn_area">
+                <button type="button" class="btn30 follow">+Follow</button><!--클릭시 토글-->
+                <button type="button" class="btn30 yellow_bg unfollow" style="display: none;">-Unfollow</button><!--클릭시 토글-->
+                <button type="button" class="btn30">Fan</button>
+                <button type="button" class="btn30">Schedule</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/swiper.min.js"></script>
+    <script>
+		$(function () {
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination'
+                },
+            });
+			cocotv.initModule( $('body'));
+        });
+    </script>
+    
+</body>
+</html>

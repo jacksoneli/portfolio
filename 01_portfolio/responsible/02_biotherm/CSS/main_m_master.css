@@ -1,0 +1,390 @@
+/*m_master.css*/
+
+body{min-width:320px;}	
+input#toggle{display:none;}	
+
+#wrap{
+	background:#fff;
+}
+
+/****************** 헤더 **********************/
+#main_header{
+	width:100%;
+	height:50px;
+	border-bottom:1px solid #81898e;
+}
+
+	#login_menu{
+		display:none;
+		position:absolute;
+		top:262px;
+		left:0;
+		
+		overflow:hidden; 
+		width:160px;
+		background:rgba(50,50,50,0.8);
+		
+		padding-top:50px;
+		padding-bottom:20px;
+		z-index:70;
+	}
+		#login_menu > ul{float:left;}
+		#login_menu > ul > li{
+			font-size:12px; 
+			color:#999; 
+			margin-top:10px; 
+			margin-left:10px;
+		}
+		#login_menu > ul > li:nth-of-type(2),
+		#login_menu > ul > li:nth-of-type(4),
+		#login_menu > ul > li:nth-of-type(6),
+		#login_menu > ul > li:nth-of-type(8){display:none;}
+		
+		#login_menu > ul > li > a{font-size:12px; color:#fff;}
+
+	#logo{float:left; margin:5px 0 0 4px;}
+		#logo > a{overflow:hidden; display:block;}
+		#logo > a > img{float:left;}
+		
+	/*gnb*/
+	#gnb{
+		display:none;
+		position:absolute;
+		top:0;
+		left:0;
+		
+		width:160px;
+		background:rgba(50,50,50,0.8);
+		z-index:60;
+	}
+		#gnb > ul{}
+		#gnb > ul > li{
+			margin-top:10px; 
+			margin-left:10px;
+		}
+		#gnb > ul > li > a{display:block; color:#fff; font-size:0.9em;}
+			#gnb > ul > li > ul{margin-left:10px;}			
+			#gnb > ul > li > ul > li{}			
+			#gnb > ul > li > ul > li > a{color:#ccc; font-size:0.8em;}			
+	
+	/*gnb 접는 버튼*/
+		#btn_close{
+			width:35px; height:35px;
+			background:url(../images/btn_close.png);
+			
+			position:absolute;
+			left:120px;
+			top:10px;
+			z-index:50;
+			
+			overflow:hidden;
+			text-indent:-5000px;
+		}
+	
+	/*gnb버튼*/	
+	#toggle_label{
+		position:absolute; 
+		right:4px;
+		top:4px;
+		
+		width:42px; 
+		height:42px;
+		background:url(../images/m_gnb_btn.png);
+		
+		overflow:hidden;
+		text-indent:-9999px;
+		}
+		
+	/*toggle*/
+		input#toggle:checked + #wrap #gnb{display:block;}
+		input#toggle:checked + #wrap #login_menu{display:block;}
+
+	#search{display:none;}
+
+
+/****************** 배너 **********************/
+#banner{
+	position:relative;
+	overflow:hidden;
+	z-index:20;
+	width:100%;
+	padding-bottom:30px;
+}
+	.banner_slider{
+		width:100%;
+		height:100%;
+	}
+	.banner_slider .banner_container{
+		overflow:hidden;
+		position:absolute;
+		width:100%;
+		height:100%;	
+	}
+	.banner_slider .banner_container #banner_content{
+		float:left;	
+		position:absolute;
+		/* 1180*3 */
+		width: 3540px;
+	}
+	.banner_slider .banner_container #banner_content img{
+		float:left;
+	}
+
+/* 배너슬라이더 버튼 */
+	.banner_nav_container{width:100%;}
+		.banner_nav_container > ul{
+			position:absolute;
+			left:50%;
+			bottom:0;
+			margin-left:-48px;
+}
+		.banner_nav_container > ul > li{display:inline-block; margin-top:7px; margin-right:25px;}
+		.banner_nav_container > ul > li > a{
+			display:block;
+			width:15px;
+			height:15px;
+			background:url(../images/banner_btn_white.png);
+			
+			overflow:hidden;
+			text-indent:-9999px;
+		}
+		/*.banner_nav_container > ul > li > a:hover{background:url(../images/banner_btn_black.png)}*/
+		.banner_nav_container > ul > li > a.select{background:url(../images/banner_btn_black.png)}
+
+
+
+/****************** 콘텐트 **********************/
+#content{width:100%; margin-top:91px;}
+
+	/*아쿠아파워*/
+	#product_section_1{width:100%;}
+	
+		#product_section_1 > h1{
+			color:#333; 
+			font-size:28px; 
+			font-weight:bold; 
+			text-align:center;
+		}
+		#product_section_1 > h1 > span{font-weight:normal;}
+
+		#articles_1{
+			overflow:hidden;
+			width:100%;
+			margin-top:43px;
+		}
+			#articles_1 > dl{
+				float:left; 
+				width:33.3%; 
+				height:375px;
+			}
+				#articles_1 > dl > dt{text-align:center;}
+					#articles_1 > dl > dt > div{
+						/*position:absolute;
+						left:50%;
+						margin-left:-56px;*/
+						display:inline-block;
+						width:112px; 
+						height:270px; 
+						background:url(../images/aqua_1.png);
+						
+						overflow:hidden;
+						text-indent:-9999px;
+					}
+					#articles_1 > dl:nth-of-type(2) > dt > div{background:url(../images/aqua_2.png);}
+					#articles_1 > dl:nth-of-type(3) > dt > div{background:url(../images/aqua_3.png);}
+					#articles_1 > dl > dt > p{
+						text-align:center; 
+						margin-top:31px; 
+						font-size:1.1em;
+						height:30px;
+					}
+					#articles_1 > dl > dt > p > span{display:inline-block;}
+						
+				#articles_1 > dl > dd{text-align:center;}
+					#articles_1 > dl > dd > input{margin:10px 13px 0 13px;}
+
+	/*화이트필*/
+	#product_section_2{width:100%; margin-top:109px;}
+	
+		#product_section_2 > h1{
+			color:#333; 
+			font-size:28px; 
+			font-weight:bold; 
+			text-align:center;
+		}
+		#product_section_2 > h1 > span{font-weight:normal;}
+
+		#articles_2{
+			overflow:hidden;
+			width:100%; 
+			margin-top:43px;
+		}
+			#articles_2 > dl{
+				/*height:349px;*/
+				
+				float:left; 
+				
+				width:33.3%; 
+			}
+				#articles_2 > dl > dt{text-align:center;}
+					#articles_2 > dl > dt > div{
+						/*position:absolute;
+						left:50%;
+						margin-left:-56px;*/
+						display:inline-block;
+						width:100%; 
+						height:270px; 
+						background:url(../images/white_1.png) no-repeat center top;
+						
+						overflow:hidden;
+						text-indent:-9999px;
+					}
+					#articles_2 > dl:nth-of-type(2) > dt > div{background-image:url(../images/white_2.png);}
+					#articles_2 > dl:nth-of-type(3) > dt > div{background-image:url(../images/white_3.png);}
+					#articles_2 > dl > dt > p{
+						text-align:center; 
+						margin-top:31px; 
+						font-size:1.1em;
+						height:30px;
+					}
+					#articles_2 > dl > dt > p > span{display:inline-block;}
+					
+				#articles_2 > dl > dd{text-align:center;}
+					#articles_2 > dl > dd > input{margin:10px 13px 0 13px;}
+
+	/*포스 수프림*/
+	#product_section_3{
+		width:100%; 
+		margin-top:134px; 
+		overflow:hidden; 
+		background:url(../images/m_sec3_bg.png) no-repeat 20% 100px;
+	}
+	
+		#product_section_3 > h1{
+			color:#333; 
+			font-size:28px; 
+			font-weight:bold; 
+			text-align:center;
+		}
+		#product_section_3 > h1 > span{font-weight:normal;}
+
+		#articles_3{
+			float:right;
+			width:43%; 
+			margin-top:43px;
+		}
+			
+			#articles_3 > dl{
+				position:relative;
+				height:120px;
+				width:100%; 
+				margin-right:20px;
+			}
+				#articles_3 > dl > dt{}
+					#articles_3 > dl > dt > div{
+						position:absolute;
+						right:0px;
+						
+						width:72px; 
+						height:120px; 
+						background:url(../images/m_force_1.png);
+						
+						overflow:hidden;
+						text-indent:-9999px;
+					}
+					#articles_3 > dl:nth-of-type(2) > dt > div{
+						left:0px;
+						background:url(../images/m_force_2.png);
+					}
+					#articles_3 > dl:nth-of-type(3) > dt > div{
+						background:url(../images/m_force_3.png);
+					}
+					#articles_3 > dl > dt > p{
+						position:absolute;
+						top:20px;
+						right:65px;
+						font-size:1.0em;
+						text-align:right;
+						height:28px;
+					}
+					#articles_3 > dl > dt > p > span{display:inline-block;}
+					
+					#articles_3 > dl:nth-of-type(2) > dt > p{
+						right:0px;
+						left:83px;
+						text-align:left;
+					}
+					
+					#articles_3 > dl > dd{
+						position:absolute;
+						top:50px;
+						right:70px;
+					}
+					#articles_3 > dl:nth-of-type(2) > dd{
+						right:0px;
+						left:90px;
+					}
+					#articles_3 > dl > dd > input{margin:5px 5px 0 0px;}
+
+	/*비오템스토리(동영상섹션)*/
+	#movie_section{
+		width:100%; 
+		margin-top:136px; 
+	}
+		#movie_section > h1{
+			color:#333; 
+			font-size:28px; 
+			font-weight:bold; 
+			text-align:center;
+		}
+		#movie_section > h1 > span{font-weight:normal;}
+
+		#movie_articles{
+			text-align:center;
+			margin-top:40px;
+			width:100%;
+		}
+			#movie_articles > article{display:inline-block;}
+			#movie_articles > article > a{
+				margin-top:10px;
+				margin-right:5px;
+				display:block;
+				width:290px;
+				height:147px;
+				background:url(../images/movie_1.png);
+				
+				overflow:hidden;
+				text-indent:-9999px;
+			}
+			#movie_articles > article:nth-of-type(2) > a{
+				background: url(../images/movie_2.png);
+			}
+			#movie_articles > article:nth-of-type(3) > a{
+				background:url(../images/movie_3.png);
+			}
+			#movie_articles > article:nth-of-type(4) > a{
+				background:url(../images/movie_4.png);
+			}
+
+
+/****************** 푸터 **********************/
+#main_footer{
+	width:100%;
+	margin-top:100px; 
+	border-top:1px solid #e2e2e2;
+	padding-top:24px;
+	padding-bottom:20px;
+	text-align:center;
+}
+	#f_corp,
+	#f_corp > span > a, 
+	#f_corp > address{
+		color:#a8a8a8; 
+		font-size:0.9em;
+	}
+	#f_corp > address > span{display:inline-block;}
+
+
+/***** CLASS ************************/
+.moblie_blind{display:none;}
+

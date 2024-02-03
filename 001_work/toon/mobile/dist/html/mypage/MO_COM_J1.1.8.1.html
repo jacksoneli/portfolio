@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>J1.1.8.1 마이_내정보_회원탈퇴_탈퇴사유선택</title>
+	<meta name="keywords" content="스토리잼" />
+	<meta name="description" content="스토리잼입니다." />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image" content="../../../images/meta_image.png">
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/mypage.css" />
+</head>
+<body ontouchstart="">
+	<!-- 2019.09.06 추가되었습니다. -->
+	<div id="wrap">
+		<header id="header">
+			<div class="offset">
+				<a class="btn_back" href="#"><span class="blind">뒤로가기</span></a>
+				<h1>회원탈퇴</h1>
+                <div class="bar-progress">
+                    <span class="bar" style="width:33.33%;"></span>
+                </div>
+			</div>
+		</header>
+		<section class="body-section withdrawal">
+			<div id="container">
+				<div class="contents" role="main">
+					<div class="contents__header">
+            <h2 class="contents__title">어떤 점이 불편하셨나요?</h2>
+            <p class="contents__msg">스토리잼을 떠나는 이유에 대해 알려주세요.</p>
+          </div>
+          <form class="frm chkradiofrm">
+          	<div class="frm__field chkbox">
+							<input type="checkbox" class="blind" id="survey1" name="survey" />
+							<label for="survey1">찾는 작품이 없어서</label>
+						</div>
+						<div class="frm__field chkbox">
+							<input type="checkbox" class="blind" id="survey2" name="survey" />
+							<label for="survey2">이용 가격이 비싸서</label>
+						</div>
+						<div class="frm__field chkbox">
+							<input type="checkbox" class="blind" id="survey3" name="survey" />
+							<label for="survey3">혜택이 타 서비스에 비해 적어서</label>
+						</div>
+						<div class="frm__field chkbox">
+							<input type="checkbox" class="blind" id="survey4" name="survey" />
+							<label for="survey4">이용이 복잡하고 어려워서</label>
+						</div>
+						<div class="frm__field chkbox">
+							<input type="checkbox" class="blind" id="survey5" name="survey" />
+							<label for="survey5">서비스 장애나 에러가 많아서</label>
+						</div>
+						<div class="frm__field chkbox">
+							<input type="checkbox" class="blind" id="survey6" name="survey" />
+							<label for="survey6">타 웹툰/웹소설 서비스를 이용하기 위해서</label>
+						</div>
+						<div class="frm__field chkbox">
+							<input type="checkbox" class="blind" id="survey7" name="survey" />
+							<label for="survey7">기타</label>
+							<textarea class="txtarea" id="note" cols="30" rows="10" placeholder="의견을 적어주시면 서비스 개선에 적극 반영하겠습니다. (최대 100자)" disabled></textarea>
+						</div>
+						<span class="frm__footer">
+							<a class="frm__footer--btn cancel" id="withdrawalCancel" href="#"><span>탈퇴취소</span></a>
+							<a class="frm__footer--btn next disabled" id="withdrawalNext" href="MO_COM_J1.1.8.2.html" ><span>다음</span></a>
+						</span>
+          </form>
+				</div>
+			</div>
+		</section>
+
+		<div class="modal-backdrop"></div>
+		<div class="modal-popup alert" tabindex="0" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal__container">
+          <p>탈퇴사유는 최대 3개까지<br />선택 가능합니다.</p>
+        </div>
+        <div class="modal__footer">
+          <button class="btn confirm"><span>확인</span></button>
+        </div>
+      </div>
+    </div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('input[type=checkbox]').on('change', function(){
+				var cnt = $('input[type=checkbox]:checked').length;
+				if (cnt >= 1) {
+					$('#withdrawalNext').removeClass('disabled');
+				} else {
+					$('#withdrawalNext').addClass('disabled');
+				}
+
+				// 3개이상되면 체크 막기
+				if (cnt > 3) {
+					$('body').addClass('modal-open');
+					$('.modal-backdrop').css('display', 'block');
+					$('.modal-popup').addClass('open');
+					$(this).prop('checked', false);
+				}
+			});
+
+			// textarea활성화
+			$('#survey7').on('change', function(){
+				if ($(this).prop('checked') == true) {
+					$('#note').removeAttr('disabled');
+				} else {
+					$('#note').attr('disabled', true);
+				}
+			});
+
+			// 팝업 닫기
+			$('.confirm').on('click', function(){
+				$('.modal-backdrop').css('display', 'none');
+				$('.modal-popup').removeClass('open');
+				$('body').removeClass('modal-open');
+			});
+		});
+	</script>
+</body>
+</html>

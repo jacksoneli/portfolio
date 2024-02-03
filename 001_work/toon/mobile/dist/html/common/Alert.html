@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <title></title>
+    <meta name="keywords" content="스토리잼" />
+    <meta name="description" content="스토리잼입니다." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image" content="../../../images/meta_image.png">
+    <link rel="stylesheet" href="../../css/common.css" />
+</head>
+
+<body ontouchstart="">
+	<div id="wrap">
+
+        <button class="js_open_alert">클릭시 alert 팝업 열기1</button>
+        <br /><br /><br />
+        <button class="js_open_alert2">클릭시 alert 팝업 열기2</button>
+        
+        <!--팝업 반투명 배경-->
+        <div class="modal-backdrop"></div>
+        <!--//팝업 반투명 배경-->
+        
+        <!--alert 팝업1-->
+		<div class="modal-popup alert type2 js_pop1" tabindex="0" role="dialog">
+		    <div class="modal-dialog" role="document">
+                <div class="modal_head">
+                    <p>제목 제목 제목</p>
+                </div>
+		        <div class="modal__container">
+		            <p>탈퇴사유는 최대 3개까지<br />선택 가능합니다.</p>
+		        </div>
+		        <div class="modal__footer clearfix">
+		            <button class="btn js_close_pop"><span>버튼</span></button>
+		            <button class="btn confirm js_close_pop"><span>버튼</span></button>
+		        </div>
+		    </div>
+		</div>
+        <!--//alert 팝업1-->
+
+        <!--alert 팝업2-->
+		<div class="modal-popup alert type2 one_btn js_pop2" tabindex="0" role="dialog">
+		    <div class="modal-dialog" role="document">
+                <div class="modal_head">
+                    <p>제목 제목 제목</p>
+                </div>
+		        <div class="modal__container">
+		            <p>인증번호가 발송되었습니다.</p>
+		        </div>
+		        <div class="modal__footer clearfix">
+		            <button class="btn confirm js_close_pop"><span>버튼</span></button>
+		        </div>
+		    </div>
+		</div>
+        <!--//alert 팝업2-->
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // 팝업열기1
+        $('.js_open_alert').on('click', function(e){
+            $('body').addClass('modal-open');
+            $('.modal-backdrop').css('display', 'block');
+            $('.js_pop1').addClass('open');
+            e.preventDefault();
+        });
+        
+        // 팝업열기2
+        $('.js_open_alert2').on('click', function(e){
+            $('body').addClass('modal-open');
+            $('.modal-backdrop').css('display', 'block');
+            $('.js_pop2').addClass('open');
+            e.preventDefault();
+        });
+        
+        // 팝업닫기
+        $('.modal-popup').on('click', '.js_close_pop', function(e){
+            $('body').removeClass('modal-open');
+            $(this).closest('.modal-popup').removeClass('open');
+            $('.modal-backdrop').css('display', 'none');
+            e.preventDefault();
+        });        
+        
+    </script>
+
+</body>
+</html>

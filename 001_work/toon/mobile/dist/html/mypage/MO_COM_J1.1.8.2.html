@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>J1.1.8.2 마이_내정보_회원탈퇴_유의사항 확인</title>
+    <meta name="keywords" content="스토리잼" />
+    <meta name="description" content="스토리잼입니다." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image" content="../../../images/meta_image.png">
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/mypage.css" />
+</head>
+
+<body ontouchstart="">
+    <!-- 2019.09.06 추가되었습니다. -->
+    <div id="wrap">
+        <header id="header">
+            <div class="offset">
+                <a class="btn_back" href="#"><span class="blind">뒤로가기</span></a>
+                <h1>회원탈퇴</h1>
+                <div class="bar-progress">
+                    <span class="bar" style="width:66.66%;"></span>
+                </div>
+            </div>
+        </header>
+        <section class="body-section withdrawal">
+            <div id="container">
+                <div class="contents" role="main">
+                    <div class="contents__header">
+                        <h2 class="contents__title">탈퇴 전, 꼭 확인해 주세요!</h2>
+                    </div>
+                    <div class="withdrawal__notice mb64">
+                        <div class="tit_num"><img src="../../../images/icons/1num@3x.png" alt="1" width="32"></div>
+                        <h3 class="contents__title2">소장 작품 / 쿠키 / 잼 / 이용권이 모두 소멸됩니다.</h3>
+                        <ul class="contents__list fs14">
+                            <li>탈퇴 즉시 보유하고 계신 자산은 모두 소멸되며, 복구되지 않습니다.</li>
+                            <li>잼/ 이용권 취소 또는 쿠키 환불을 원하시면 [마이] 페이지 혹은 help@storyjam.co.kr 로 문의하시면 환불 절차에 대해 안내해 드립니다.</li>
+                        </ul>
+                        <div class="tit_num"><img src="../../../images/icons/2num@3x.png" alt="2" width="32"></div>
+                        <h3 class="contents__title2">동일 아이디로 재가입이 불가합니다.</h3>
+                        <ul class="contents__list fs14">
+                            <li>스토리잼 탈퇴 후, 동일한 이메일 아이디로 재가입이 불가능합니다. </li>
+                            <li>이는 가입과 탈퇴의 무분별한 반복을 막고, 이용자들에게 피해를 끼치는 행위를 방지하기 위함이니 양해 부탁 드립니다.</li>
+                        </ul>
+                        <div class="tit_num"><img src="../../../images/icons/3num@3x.png" alt="3" width="32"></div>
+                        <h3 class="contents__title2">크리에이터이신 경우, 보유중 인 스토리의 수익 활동이 중단되며 모든 데이터가 삭제됩니다.</h3>
+                        <div class="note_gray_box">
+                            <div class="tit_wrap">꼭 확인하세요!</div>
+                            <div class="cont_wrap">판매대기/판매중인 스토리 혹은 수익금이 남아있을 경우 탈퇴가 불가능합니다. </div>
+                        </div>
+                        <ul class="contents__list fs14">
+                            <li>탈퇴 즉시 보유하고 계신 스토리 및 회차 정보가 모두 삭제되며 복구되지 않습니다.</li>
+                            <li>
+                                <b>단, 독자가 소장/대여중인 스토리(회차) 의 경우 구매한 건에 한하여 구매 기간 동안 독자에게 제공됩니다.</b>
+                                <p>
+                                    -&nbsp;&nbsp;대여&nbsp;&nbsp;:&nbsp;&nbsp;이용권 사용일로부터 72시간<br />
+                                    -&nbsp;&nbsp;소장&nbsp;&nbsp;:&nbsp;&nbsp;이용권 사용일로부터 회원 탈퇴시점까지
+                                </p>
+                            </li>
+                            <li>스토리에서 발생하는 수익이 자동 중단되며, 매출 내역 등 스토리와 관련된 모든 활동  내역이 사라집니다.</li>
+                            <li>탈퇴가 불가능한 상황일 경우 [1:1문의하기] 또는help@storyjam.co.kr로 문의해 주시면 최대한 빠르게 답변해 드리겠습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="withdrawal__notice--footer type2">
+                    <div class="wrapper">
+                        <p>
+                            <input class="blind" type="checkbox" id="noticeDesc" />
+                            <label for="noticeDesc">안내 사항을 모두 확인했으며, 회원정보와 보유자산은 모두 삭제되며 복구가 불가함에 동의합니다.</label>
+                        </p>
+                        <div class="withdrawal__notice--func">
+                            <a class="withdrawal__notice--btn cancel" id="withdrawalCancel" href="#"><span>탈퇴취소</span></a>
+                            <button class="withdrawal__notice--btn active" id="withdrawalNext" disabled><span>탈퇴하기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-backdrop"></div>
+        <!-- 2019.08.26 클래스 변경 -->
+        <div class="modal-popup popup2" tabindex="0" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal__container">
+                    <p class="paragraph">스토리잼에서 드리는<br />다양한 혜택을<br /><strong>정말로 포기하시겠어요?</strong></p>
+                    <div class="modal__container--btn">
+                        <a class="btn submit" href="#" role="button"><span>아니오, 혜택을 유지할게요</span></a>
+                        <a class="btn default block" href="MO_COM_J1.1.8.3.html" role="button"><span>네, 혜택을 포기하고 탈퇴합니다</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('input[type=checkbox]').on('change', function() {
+                if ($(this).prop('checked') == true) {
+                    $('button').removeAttr('disabled')
+                } else {
+                    $('button').attr('disabled', true);
+                }
+            });
+
+            $('#withdrawalNext').on('click', function() {
+                $('body').addClass('modal-open');
+                $('.modal-backdrop').css('display', 'block');
+                $('.modal-popup').addClass('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

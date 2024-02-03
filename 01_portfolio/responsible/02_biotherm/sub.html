@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BIOTHERM HOMME SUB</title>
+<link rel="shortcut icon" href="images/shortcut_icon.png" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="CSS/reset.css" />
+<link rel="stylesheet" href="CSS/sub_p_master.css" media="screen and (min-width:760px)" />
+<link rel="stylesheet" href="CSS/sub_m_master.css" media="screen and (max-width:759px)" />
+<script src="libs/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+<input type="checkbox" id="toggle" />
+<div id="wrap">
+    <div class="skip">
+        <a href="#wrap">콘텐츠바로가기</a>
+        <a href="#gnb">메인메뉴바로가기</a>
+        <a href="#main_footer">푸터바로가기</a>
+    </div>
+    <header id="main_header">
+    	<nav id="login_menu">
+        	<ul>
+                <li><a href="#">로그인</a></li>
+                <li>|</li>
+                <li><a href="#">회원가입</a></li>
+                <li>|</li>
+                <li><a href="#">매장찾기</a></li>
+                <li>|</li>
+                <li><a href="#">사이트맵</a></li>
+                <li>|</li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </nav>
+        <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="로고" /></a></h1>
+        <label for="toggle" id="toggle_label" onClick="">메뉴 펼치는 버튼</label>
+        <nav id="gnb">
+        	<ul>
+                <li><a href="#">PRODUCTS +</a></li>
+                <li><a href="#">WHAT'S NEW</a></li>    
+                <li><a href="#">BIOTHERM STORY</a>
+                	<ul>
+                    	<li><a href="#">비오템 소개</a></li>
+                    	<li><a href="#">비오템 광고</a></li>
+                    </ul>
+                </li>    
+                <li><a href="#">BIOTHERM LOUNGE</a></li>
+                <li><a href="#">EVENT</a>
+                	<ul>
+                    	<li><a href="#">진행중 이벤트</a></li>
+                    	<li><a href="#">지난 이벤트</a></li>
+                    	<li><a href="#">당첨자 발표</a></li>
+                    </ul>
+                </li>    
+                <li><a href="#">POINT GIFT</a>
+                	<ul>
+                    	<li><a href="#">Point Gift</a></li>
+                    	<li><a href="#">Online문의</a></li>
+                    </ul>
+                </li>    
+            </ul>
+            <div id="btn_close">CLOSE</div>
+			<script>
+                window.onload=function(){
+                    $("#btn_close").click(
+                        function(){
+                            $("#toggle").removeAttr("checked");
+                        }
+                    );
+                }
+            </script>
+        </nav>
+        <div id="search">
+            <fieldset>
+                <label class="blind">통합검색 단어입력</label>
+                <input type="text" class="search" />
+                <input type="image" src="images/search_btn.png" alt="검색버튼" />
+            </fieldset>
+        </div>
+    </header>
+	<div id="con_wrap">
+    	<div id="title">
+        	<h1>BIOTHERM STORY</h1>
+            <h2>건강한 아름다움을 전하는 브랜드, 비오템 스토리</h2>
+        </div>
+    	<nav id="left_nav">
+        	<div id="nav_title" class="moblie_blind">
+            	<h3>BIOTHERM<br />STORY</h3>
+                <h4>비오템 스토리</h4>
+            </div>
+            <dl>
+            	<dt><a href="#">비오템 소개</a></dt>
+                <dd><a href="#">STORY</a></dd>
+                <dd><a href="#">CI</a></dd>
+                <dd><a href="#">HISTORY</a></dd>
+                <dd><a href="#">GLOBAL</a></dd>
+            </dl>
+            <dl>
+            	<dt><a href="#">비오템 광고</a></dt>
+                <dd><a href="#">On Air</a></dd>
+                <dd><a href="#">지면광고</a></dd>
+                <dd><a href="#">ADVERTORIAL</a></dd>
+            </dl>
+        </nav>
+        <section id="contents">
+        	<div id="state" class="moblie_blind">
+                <span><a href="#">HOME</a></span>
+                <span>&nbsp;&gt;&nbsp;</span>
+                <span><a href="#">BIOTHERM STORY</a></span>
+                <span>&nbsp;&gt;&nbsp;</span>
+                <span><a href="#">비오템 소개</a></span>
+                <span>&nbsp;&gt;&nbsp;</span>
+                <span><a href="#">STORY</a></span>
+            </div>
+        	<h5 id="section_title">Live to the Full <span>or</span> Nothing</h5>
+            <article id="article_1">
+            	<dl>
+                	<dt>더 당당하게! 더 생기있게!<br />더 건강하게!</dt>
+                    <dd>비오템이 강렬하고 열정 가득한 라이프를 가진<br />헤도니스트들을 위한 브랜드로 업그레이드 됩니다.<br /><br />원하는 것은 성취해내고야 마는<br />바쁜 일상 속에서 건강하게 인생을 누릴 줄 아는<br />이 시대의 헤도니스트들을 비오템이 응원합니다.<br /><br />물속 신비한 생명력이 담긴 비오템의 제품들로<br />더 나답게, 당신의 삶에 빠져보세요.</dd>
+                </dl>
+            </article>
+            <article id="article_2">
+            	<dl>
+                	<dt>AQUATIC BIODIVERSITY<br />SKINCARE</dt>
+                    <dd>1952년에 설립된 비오템은 스파워터에 함유된<br />순수플랑크톤 추출물과 각종 올리고 미네랄 성분에 기초한<br />전문적인 스킨케어 제품 개발에 노력을 기울여 왔습니다.<br /><br />이제 60여년의 연구 결과를 바탕으로 한<br />비오템만의 혁신적인 기술과 제품을 만나보세요.</dd>
+                </dl>
+            </article>
+            <article id="article_3">
+            	<dl>
+                	<dt>비오템 브랜드 스토리 영상</dt>
+                    <dd>A journey into the deep</dd>
+                </dl>
+                <iframe src="https://www.youtube.com/embed/MHv3NejA-mQ" allowfullscreen></iframe>
+            </article>
+        </section>
+    </div>
+    <footer id="main_footer">
+    	<h1 id="f_logo_left" class="moblie_blind">f_logo_left</h1>
+        <div id="f_corp">
+			<span><a href="#">개인정보 취급방침</a></span>
+			<span> | </span>
+			<span><a href="#">이용약관</a></span>
+			<span> | </span>
+			<span><a href="#">공지사항</a></span>
+            <address>엘오케이(유)&nbsp;&nbsp;&nbsp;사업자번호:220-81-73483&nbsp;&nbsp;&nbsp;<span>대표:얀브노와르부르동</span></address>
+            <address>COPYRIGHT &copy; 2014 BIOTHERM</address>
+        </div>
+    	<h1 id="f_logo_right" class="moblie_blind">f_logo_right</h1>
+    </footer>
+</div>
+</body>
+</html>

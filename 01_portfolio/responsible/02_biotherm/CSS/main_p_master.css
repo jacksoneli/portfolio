@@ -1,0 +1,367 @@
+/*p_master.css*/
+
+body{}	
+input#toggle, #btn_close{display:none;}	
+#toggle_label{display:none;}
+
+#wrap{
+	width:1180px;
+	margin:0 auto;
+	background:#fff;
+}
+
+
+/****************** 헤더 **********************/
+#main_header{
+	position:relative;
+	z-index:30;
+	width:100%; 
+}
+
+	#login_menu{overflow:hidden; margin-top:16px;}
+		#login_menu > ul{float:right}
+		#login_menu > ul > li{font-size:12px; color:#999; float:left; margin-right:10px;}
+		#login_menu > ul > li > a{font-size:12px; color:#999;}
+
+	#logo{float:left; margin:21px 0 0 4px;}
+		#logo > a{overflow:hidden; display:block;}
+		#logo > a > img{float:left;}
+
+	#gnb{
+		float:left; 
+		margin-left:43px; 
+		margin-top:38px; 
+	}
+		#gnb > ul{float:left;}
+		#gnb > ul > li{float:left; margin-right:40px; position:relative;}
+		#gnb > ul > li > a{display:block; color:#333; font-size:0.9em;}
+			/*펼쳐지는 서브메뉴*/
+			#gnb > ul > li > ul{				
+				position:absolute; 
+				top:20px; 
+				overflow:hidden;/*처음엔 가려져 있도록*/
+				height:0; 
+				transition-duration:0.5s;
+				width:75px;
+				/*background:rgba(176,176,176,0.3);*/
+			}
+			#gnb > ul:hover > li > ul{height:50px;}
+			#gnb > ul > li > ul > li > a{color:#999; font-size:0.8em;}
+			#gnb > ul > li > ul > li:hover > a{color:#333;}
+
+	#search{float:right; margin-top:28px;}
+		#search > fieldset{overflow:hidden;}
+		#search > fieldset > input{float:left;}
+		#search > fieldset > input:nth-of-type(1){width:198px; height:27px; border:1px solid #ccc; border-radius:4px 0 0 4px;}
+
+
+/****************** 배너 **********************/
+#banner{
+	position:relative;
+	overflow:hidden;
+	z-index:20;
+	height:900px;
+	width:100%;
+	padding-top:10px;
+	padding-bottom:30px;
+}
+	.banner_slider{
+		width:100%;
+		height:100%;
+	}
+	.banner_slider .banner_container{
+		overflow:hidden;
+		position:absolute;
+		width:100%;
+		height:100%;	
+	}
+	.banner_slider .banner_container #banner_content{
+		float:left;	
+		position:absolute;
+		/* 1180*3 */
+		width: 3540px;
+	}
+	.banner_slider .banner_container #banner_content img{
+		float:left;
+	}
+
+/* 배너슬라이더 버튼 */
+	.banner_nav_container{width:100%;}
+		.banner_nav_container > ul{
+			position:absolute;
+			left:50%;
+			bottom:0px;
+			margin-left:-48px;
+}
+		.banner_nav_container > ul > li{display:inline-block; margin-top:7px; margin-right:25px;}
+		.banner_nav_container > ul > li > a{
+			display:block;
+			width:15px;
+			height:15px;
+			background:url(../images/banner_btn_white.png);
+			
+			overflow:hidden;
+			text-indent:-9999px;
+		}
+		.banner_nav_container > ul > li > a.select{background:url(../images/banner_btn_black.png)}
+
+
+/****************** 콘텐트 **********************/
+#content{width:100%; margin-top:91px;}
+
+	/*아쿠아파워*/
+	#product_section_1{width:100%;}
+	
+		#product_section_1 > h1{
+			color:#333; 
+			font-size:28px; 
+			font-weight:bold; 
+			text-align:center;
+		}
+		#product_section_1 > h1 > span{font-weight:normal;}
+
+		#articles_1{
+			overflow:hidden;
+			width:100%;
+			margin-top:43px;
+		}
+			#articles_1 > dl{
+				float:left; 
+				width:33.3%; 
+				height:355px;
+			}
+				#articles_1 > dl > dt{text-align:center;}
+					#articles_1 > dl > dt > div{
+						/*position:absolute;
+						left:50%;
+						margin-left:-56px;*/
+						display:inline-block;
+						width:112px; 
+						height:270px; 
+						background:url(../images/aqua_1.png);
+						
+						overflow:hidden;
+						text-indent:-9999px;
+					}
+					#articles_1 > dl:nth-of-type(2) > dt > div{background:url(../images/aqua_2.png);}
+					#articles_1 > dl:nth-of-type(3) > dt > div{background:url(../images/aqua_3.png);}
+					#articles_1 > dl > dt > p{
+						text-align:center; 
+						margin-top:31px; 
+						font-size:1.1em;}
+					
+				#articles_1 > dl > dd{text-align:center;}
+					#articles_1 > dl > dd > input{margin:10px 13px 0 13px;}
+					
+	/*화이트필*/
+	#product_section_2{width:100%; margin-top:109px;}
+	
+		#product_section_2 > h1{
+			color:#333; 
+			font-size:28px; 
+			font-weight:bold; 
+			text-align:center;
+		}
+		#product_section_2 > h1 > span{font-weight:normal;}
+
+		#articles_2{
+			overflow:hidden;
+			width:100%; 
+			margin-top:43px;
+		}
+			#articles_2 > dl{
+				/*height:349px;*/
+				
+				float:left; 
+				
+				width:33.3%; 
+			}
+				#articles_2 > dl > dt{text-align:center;}
+					#articles_2 > dl > dt > div{
+						/*position:absolute;
+						left:50%;
+						margin-left:-56px;*/
+						display:inline-block;
+						width:270px; 
+						height:270px; 
+						background:url(../images/white_1.png);
+						
+						overflow:hidden;
+						text-indent:-9999px;
+					}
+					#articles_2 > dl:nth-of-type(2) > dt > div{background:url(../images/white_2.png);}
+					#articles_2 > dl:nth-of-type(3) > dt > div{background:url(../images/white_3.png);}
+					#articles_2 > dl > dt > p{
+						text-align:center; 
+						margin-top:31px; 
+						font-size:1.1em;}
+					
+				#articles_2 > dl > dd{text-align:center;}
+					#articles_2 > dl > dd > input{margin:10px 13px 0 13px;}
+
+
+
+
+	/*포스 수프림*/
+	#product_section_3{
+		width:100%; 
+		margin-top:134px; 
+		overflow:hidden; 
+		background:url(../images/sec3_bg.png) no-repeat 17% 50px;
+	}
+	
+		#product_section_3 > h1{
+			color:#333; 
+			font-size:28px; 
+			font-weight:bold; 
+			text-align:center;
+		}
+		#product_section_3 > h1 > span{font-weight:normal;}
+
+		#articles_3{
+			float:right;
+			width:50%; 
+			margin-top:43px;
+		}
+		
+			#articles_3 > div.txt{
+				font-family:"adbgothic", "돋움", Dotum, sans-serif;
+				font-size:23px;
+				color:#171717;
+				text-align:center;
+			}
+			#articles_3 > div.txt > h3:last-child{color:#192244;}
+			
+			#articles_3 > dl{
+				position:relative;
+				height:203px;
+				width:100%; 
+			}
+				#articles_3 > dl > dt{}
+					#articles_3 > dl > dt > div{
+						position:absolute;
+						right:35px;
+						
+						width:114px; 
+						height:203px; 
+						background:url(../images/force_1.png) no-repeat;
+						
+						overflow:hidden;
+						text-indent:-9999px;
+					}
+					#articles_3 > dl:nth-of-type(2) > dt > div{
+						left:35px;
+						background:url(../images/force_2.png);
+					}
+					#articles_3 > dl:nth-of-type(3) > dt > div{
+						background:url(../images/force_3.png);
+					}
+					#articles_3 > dl > dt > p{
+						position:absolute;
+						top:74px;
+						right:140px;
+						font-size:1.1em;
+					}
+					#articles_3 > dl:nth-of-type(2) > dt > p{
+						position:absolute;
+						top:74px;
+						left:170px;
+						font-size:1.1em;
+					}
+					
+					#articles_3 > dl > dd{
+						position:absolute;
+						top:100px;
+						right:130px;
+					}
+					#articles_3 > dl:nth-of-type(2) > dd{
+						position:absolute;
+						top:100px;
+						left:160px;
+					}
+					#articles_3 > dl > dd > input{margin:10px 13px 0 13px;}
+
+	/*비오템스토리(동영상섹션)*/
+	#movie_section{
+		width:100%; 
+		margin-top:136px; 
+	}
+		#movie_section > h1{
+			color:#333; 
+			font-size:28px; 
+			font-weight:bold; 
+			text-align:center;
+		}
+		#movie_section > h1 > span{font-weight:normal;}
+
+		#movie_articles{
+			overflow:hidden;
+			margin-top:60px;
+			width:100%;
+		}
+			#movie_articles > article{float:left;}
+			#movie_articles > article > a{
+				margin-right:5px;
+				display:block;
+				width:290px;
+				height:147px;
+				background:url(../images/movie_1.png);
+				
+				overflow:hidden;
+				text-indent:-9999px;
+			}
+			#movie_articles > article:nth-of-type(2) > a{
+				background: url(../images/movie_2.png);
+			}
+			#movie_articles > article:nth-of-type(3) > a{
+				background:url(../images/movie_3.png);
+			}
+			#movie_articles > article:nth-of-type(4) > a{
+				background:url(../images/movie_4.png);
+			}
+
+/****************** 푸터 **********************/
+#main_footer{
+	overflow:hidden;
+	width:100%;
+	margin-top:143px; 
+	border-top:1px solid #e2e2e2;
+	padding-top:24px;
+	padding-bottom:20px;
+	
+}
+	#f_logo_left{
+		float:left;
+		width:71px; 
+		height:33px;
+		background:url(../images/f_logo_l.png);
+		
+		overflow:hidden;
+		text-indent:-9999px;
+	}
+	
+	#f_corp{
+		float:left;
+		margin-left:65px;
+	}
+	#f_corp,
+	#f_corp > span > a, 
+	#f_corp > address{
+		color:#a8a8a8; 
+		font-size:0.9em;
+	}
+	
+	#f_logo_right{
+		float:right;
+		width:72px; 
+		height:30px;
+		background:url(../images/f_logo_r.png);
+		
+		overflow:hidden;
+		text-indent:-9999px;
+	}
+
+
+
+
+

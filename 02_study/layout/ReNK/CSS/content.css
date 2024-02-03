@@ -1,0 +1,98 @@
+/* content.css */
+
+/*콘텐츠 영역의 문자 모양 초기화*/
+#content > h3{font-size:1.2em;}
+#content > p{font-size:0.9em;}
+#content p > a{
+	display:block;
+	width:41px; height:10px;
+	background:url(../images/more.jpg);
+	overflow:hidden;
+	text-indent:-9999px;
+}/*"더보기"*/
+
+
+/*콘텐츠 영역*/
+
+#content > section{
+	float:left;
+	border-top:2px solid #000;
+	padding-top:23px;
+}
+
+section.main_con1, section.main_con2{width:225px;}
+
+section.main_con1{margin-left:16px;}
+section.main_con2{margin-left:17px;}
+
+	section.main_con1 > a, section.main_con2 > a{
+		display:block;
+		width:225px; height:300px;
+		box-sizing:border-box;
+		padding-top:203px;
+	}/*반복되는 부분은 하나로 정리를 해줘야 오류가 적다*/
+	section.main_con1 > a{background:url(../images/con1_thum.jpg) no-repeat;}
+	section.main_con2 > a{background:url(../images/con2_thum.jpg) no-repeat;}
+
+	section.main_con1 > a > h3, section.main_con2 > a > h3{margin-bottom:22px;}
+	section.main_con1 > a > p, section.main_con2 > a > p{width:225px;}
+section.main_con3{
+	overflow:hidden;
+	width:498px;
+	margin-left:18px;
+}
+	section.main_con3 > figure{float:left;}
+	section.main_con3 > div{
+		float:right;
+		width:203px;
+
+		padding-top:104px;
+		background:url(../images/con3_title.jpg) no-repeat;
+	}
+	section.main_con3 > div > h3{
+		padding-top:26px;
+		background:url(../images/con_hr.jpg) no-repeat;
+		margin-bottom:25px;
+	}
+	section.main_con3 > div > p{}
+	section.main_con3 > div > p > a{margin-top:30px;}
+
+section.main_con4{
+	overflow:hidden;
+	width:990px; height:233px;
+	margin-left:16px;
+	margin-top:81px;
+}
+	section.main_con4 > div{
+		float:left;
+		width:225px;
+		background:url(../images/con4_title.jpg) no-repeat;
+		padding-top:54px;
+	}
+
+		section.main_con4 > div > h3{
+			padding-top:26px;
+			background:url(../images/con_hr.jpg) no-repeat;
+			margin-bottom:25px;
+		}
+		section.main_con4 > div > p{}
+		section.main_con4 > div > p > a{margin-top:58px;}
+
+	section.main_con4 > ul{
+		float:left;
+	}
+	section.main_con4 > ul > li{
+		float:left;
+		width:225px;
+		margin-left:18px;
+	}
+	section.main_con4 > ul > li > a{
+		display:block;
+		width:225px; height:233px;
+		overflow:hidden;
+		text-indent:-9999px;
+	}
+	section.main_con4 > ul > li:nth-child(1) > a{background:url(../images/con4_event1.jpg);}
+	section.main_con4 > ul > li:nth-child(2) > a{background:url(../images/con4_event2.jpg);}
+	section.main_con4 > ul > li:nth-child(3) > a{background:url(../images/con4_event3.jpg);}
+
