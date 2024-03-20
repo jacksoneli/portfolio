@@ -105,10 +105,15 @@ section article dl:hover dd{top:70%; opacity: 1;}
 
 .section1 article dl{width: 28%; margin: 10px;}
 
-.section3{width: 400px;}
-.section3 article dl{width: 200px; height: 48px; margin: 5px;}
+.section2 article dl{width: 13%; height: 4vh; margin: 2px; padding-top: 10px;}
+.section2 article dl:hover dd{top:30px;}
+
+.section3 article dl{width: 200px; margin: 5px;}
 .section3 article dl:hover dd{top:45px;}
 .section3 article dl dd{font-size: 12px;}
+
+.section4 article dl{width: 20%; height: 12vh; margin: 10px;}
+.section4 article dl:hover dd{top: 75%;}
 
 .edu{margin-top: 2vh;}
 .edu p{text-align: left; display: inline-block; line-height: 40px; }
